@@ -12,7 +12,7 @@ export default function OrderPage() {
               <div className={styles.orderImage}>
                 <img src={item.image} alt={item.description} />
               </div>
-              <p>{item.price}</p>
+              <p>R {item.price}</p>
               <p>{item.description}</p>
             </div>
           </a>
