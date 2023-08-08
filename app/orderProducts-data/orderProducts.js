@@ -1,13 +1,13 @@
 const orderProducts = [
   {
     id: 1,
-    image: 'image_url_1',
+    image: '/images/order-products/botanical-test.png',
     price: '$10',
     description: 'Product 1',
   },
   {
     id: 2,
-    image: 'image_url_2',
+    image: '/images/order-products/ub-toile-front.jpeg',
     price: '$15',
     description: 'Product 2',
   },
