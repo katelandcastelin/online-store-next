@@ -1,15 +1,15 @@
-import styles from './orderPage.module.css';
-import orderProducts from '../orderProducts-data/orderProducts';
+import styles from './corsetsPage.module.css';
+import corsetProducts from '../corsetsProducts-data/corsetsProducts';
 
 export default function OrderPage() {
   return (
     <div className={styles.main}>
-      <h1>Order Page</h1>
+      <h1>Shop Corsets</h1>
       <div className={styles.grid}>
-        {orderProducts.map((item) => (
+        {corsetProducts.map((item) => (
           <a key={item.id} className={styles.card}>
             <div>
-              <div className={styles.orderImage}>
+              <div className={styles.corsetImage}>
                 <img src={item.image} alt={item.description} />
               </div>
               <p>R {item.price}</p>

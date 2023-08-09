@@ -2,8 +2,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 6rem;
+  padding: 4rem;
   min-height: 100vh;
+}
+
+.main h1 {
+  padding-bottom: 3rem;
+  color: #777777;
 }
 
 .grid {
@@ -12,14 +17,14 @@
   max-width: 100%;
 }
 
-.orderImage {
+.corsetImage {
   display: flex;
   justify-content: center;
   height: 300px;
   margin-bottom: 10px;
 }
 
-.orderImage img {
+.corsetImage img {
   width: 100%;
   height: 100%;
   object-fit: cover;
