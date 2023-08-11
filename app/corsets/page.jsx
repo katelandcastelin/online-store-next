@@ -1,7 +1,7 @@
 import styles from './corsetsPage.module.css';
 import corsetProducts from '../corsetsProducts-data/corsetsProducts';
 
-export default function OrderPage() {
+export default function CorsetsPage() {
   return (
     <div className={styles.main}>
       <h1>Shop Corsets</h1>

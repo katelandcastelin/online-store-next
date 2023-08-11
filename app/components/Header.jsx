@@ -9,20 +9,16 @@ const HeaderContainer = styled.header`
   align-items: center;
 `;
 
-const HeaderLogo = styled.img`
-  border: 1px solid black;
-  height: 30px;
-  width: 70px;
+const HeaderLogo = styled.a`
+  border: 1px solid #b4b4bc;
+  height: 50px;
+  width: 250px;
   cursor: pointer;
-
   margin: auto;
-
-  /* position: absolute; */
 `;
 
 const Links = styled.div`
-  /* padding-left: 6%; */
-  /* margin: auto; */
+  padding-left: 6%;
   position: absolute;
 `;
 
@@ -40,11 +36,13 @@ const NavLink = styled.a`
 export default function Header() {
   return (
     <HeaderContainer>
-      <HeaderLogo />
+      <HeaderLogo href="/">
+        <img />
+      </HeaderLogo>
       <Links>
-        <NavLink href="/">Home</NavLink>
         <NavLink href="corsets">Corsets</NavLink>
-        <NavLink href="/">Something else</NavLink>
+        <NavLink href="order">Order</NavLink>
+        <NavLink href="about">About</NavLink>
       </Links>
     </HeaderContainer>
   )
