@@ -13,19 +13,23 @@ const HeaderContainer = styled.header`
 `;
 
 const HeaderLogo = styled.a`
-  /* border: 1px solid #b4b4bc; */
-  /* height: 50px;
-  width: 250px; */
   cursor: pointer;
   margin: auto;
 `;
 
 const Slogan = styled.p`
   text-align: center;
+  color: #808080;
+`;
+
+const LogoContainer = styled.div`
+  display: flex;
+  justify-content: center;
 `;
 
 const Logo = styled.img`
-  height: 80px;
+  height: 90px;
+  margin-bottom: 5px;
 `;
 
 const Links = styled.div`
@@ -64,11 +68,11 @@ export default function Header() {
   return (
     <HeaderContainer>
       <HeaderLogo href="/">
+        <LogoContainer>
+          <Logo src='/sewing-logo.png' />
+        </LogoContainer>
         <div>
           <Slogan>Stitched with Passion, Worn with Artistry</Slogan>
-        </div>
-        <div>
-          <Logo src='/sewing-logo.png' />
         </div>
       </HeaderLogo>
       <Links>
