@@ -1,9 +1,9 @@
 import styles from '../page.module.css';
 
-export default function OrderPage() {
+export default function AboutPage() {
   return (
     <div className={styles.main}>
-      Order Page
+      About Page
     </div>
   )
 }

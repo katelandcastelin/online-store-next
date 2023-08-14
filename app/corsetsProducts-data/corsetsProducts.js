@@ -1,4 +1,4 @@
-const orderProducts = [
+const corsetProducts = [
   {
     id: 1,
     image: '/images/order-products/botanical-test.png',
@@ -55,4 +55,4 @@ const orderProducts = [
   },
 ];
 
-export default orderProducts;
+export default corsetProducts;
