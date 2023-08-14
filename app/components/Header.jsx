@@ -80,7 +80,7 @@ export default function Header() {
         <NavLink href="order">Order</NavLink>
         <NavLink href="about">About</NavLink>
       </Links>
-      <SaleButton href="/">SALE!</SaleButton>
+      {/* <SaleButton href="/">SALE!</SaleButton> */}
     </HeaderContainer>
   )
 }
