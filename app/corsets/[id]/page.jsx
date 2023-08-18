@@ -1,19 +1,14 @@
+'use client';
 import React from 'react';
-import { useRouter } from 'next/navigation';
-import ProductDetails from '../components/ProductDetails';
-import corsetProducts from '../corsetsProducts-data/corsetsProducts';
+import ProductDetails from '../../components/ProductDetails';
+import corsetProducts from '../../corsetsProducts-data/corsetsProducts';
 
-export default function CorsetDetailPage() {
-  const router = useRouter();
-  const { id } = router.query;
+export default function CorsetDetailPage({ params }) {
+  let product = corsetProducts.find((entry) => entry.id === Number(params.id));
 
-  // return <p>Post: {router.query.id}</p>
-
-  const selectedProduct = corsetProducts.find((product) => product.id === id);
-
-  if (!selectedProduct) {
-    return <div>Product not found.</div>
-  }
-
-  return <ProductDetails product={selectedProduct} />
+  return (
+    <div>
+      <ProductDetails product={product} />
+    </div>
+  )
 }
