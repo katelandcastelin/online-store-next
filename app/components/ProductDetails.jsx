@@ -38,26 +38,6 @@ const Price = styled.p`
   font-size: larger;
 `;
 
-const DetailsAndCareContainer = styled.div`
-  width: 100%;
-  border: 1px solid #000;
-`;
-
-const SizeCartContainer = styled.div`
-  width: 100%;
-  border: 1px solid #000;
-`;
-
-const ShippingInfoContainer = styled.div`
-  width: 100%;
-  border: 1px solid #000;
-`;
-
-const ReviewsContainer = styled.div`
-  width: 100%;
-  border: 1px solid #000;
-`;
-
 export default function ProductDetails({ product }) {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -74,19 +54,6 @@ export default function ProductDetails({ product }) {
         <Price>R {product.price}</Price>
         <br />
         <Accordion />
-
-        {/* <DetailsAndCareContainer>
-          Details and Care
-        </DetailsAndCareContainer>
-        <SizeCartContainer>
-          Size Chart
-        </SizeCartContainer>
-        <ShippingInfoContainer>
-          Shipping Information
-        </ShippingInfoContainer>
-        <ReviewsContainer>
-          Reviews
-        </ReviewsContainer> */}
       </ProductInfoContainer>
     </Container>
   )
