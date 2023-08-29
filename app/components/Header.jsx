@@ -76,20 +76,11 @@ export default function Header() {
         </div>
       </HeaderLogo>
       <Links>
-        <NavLink href="corsets">Corsets</NavLink>
-        <NavLink href="order">Order</NavLink>
-        <NavLink href="about">About</NavLink>
+        <NavLink href="/corsets">Corsets</NavLink>
+        <NavLink href="/order">Order</NavLink>
+        <NavLink href="/about">About</NavLink>
       </Links>
       {/* <SaleButton href="/">SALE!</SaleButton> */}
     </HeaderContainer>
   )
 }
-
-
-// slogans
-// Stitched with Passion, Worn with Artistry.
-// Wrap Yourself in Art: Corsets by Creative Pigment.
-// Sculpting Style, Stitching Stories: Creative Pigment's Corsets.
-// Beyond Fashion: Corsets Infused with Artistry and Soul.
-// Seams of Dreams: Uniquely Yours, Crafted by Creative Pigment.
-// Passionately stitched, artfully worn

@@ -45,7 +45,7 @@ const corsetProducts = [
     id: 8,
     image: '/images/order-products/fb-bov.jpg',
     price: 1050,
-    description: 'The Birth of Venus',
+    description: 'The Birth of Venus full bust',
   },
   {
     id: 9,
