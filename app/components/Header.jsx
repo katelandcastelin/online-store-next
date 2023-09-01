@@ -5,11 +5,22 @@ const HeaderContainer = styled.header`
   height: 150px;
   border-bottom: 1px solid #b4b4bc;
   padding: 0% 6%;
-
   display: flex;
   align-items: center;
-
   position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url('/images/background/binding.png');
+    background-size: 100vw;
+    background-repeat: no-repeat;
+    opacity: 0.8;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
 `;
 
 const HeaderLogo = styled.a`

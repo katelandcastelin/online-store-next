@@ -7,16 +7,65 @@
   min-height: 100vh;
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(25%, auto));
-  max-width: 100%;
-  width: var(--max-width);
-}
-
-.orderImage {
+.comingSoonDisplay {
+  height: 400px;
+  width: 600px;
   display: flex;
   justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.comingSoonDisplay p {
+  position: absolute;
+  font-size: x-large;
+}
+.comingSoonDisplay img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.9;
+  filter: grayscale(1);
+  border-radius: 25px;
+}
+.comingSoonDisplay :hover {
+  filter: none;
+}
+
+.saleDisplay {
+  border: 1px solid #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.workspaceDisplay {
+  height: 400px;
+  width: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.workspaceDisplay p {
+  position: absolute;
+  font-size: x-large;
+}
+.workspaceDisplay img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.9;
+  filter: grayscale(1);
+  border-radius: 25px;
+}
+.workspaceDisplay :hover {
+  filter: none;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(25%, auto));
+  max-width: 100%;
+  width: var(--max-width);
 }
 
 .card {
