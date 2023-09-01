@@ -5,11 +5,13 @@ const HeaderContainer = styled.header`
   height: 150px;
   border-bottom: 1px solid #b4b4bc;
   padding: 0% 6%;
-
   display: flex;
   align-items: center;
-
   position: relative;
+
+  background-image: url('/images/background/binding.png');
+  background-size: 100vw;
+  background-repeat: no-repeat;
 `;
 
 const HeaderLogo = styled.a`
