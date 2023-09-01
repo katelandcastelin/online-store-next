@@ -9,9 +9,18 @@ const HeaderContainer = styled.header`
   align-items: center;
   position: relative;
 
-  background-image: url('/images/background/binding.png');
-  background-size: 100vw;
-  background-repeat: no-repeat;
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url('/images/background/binding.png');
+    background-size: 100vw;
+    background-repeat: no-repeat;
+    opacity: 0.8;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
 `;
 
 const HeaderLogo = styled.a`
