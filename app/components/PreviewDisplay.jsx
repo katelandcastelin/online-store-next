@@ -3,12 +3,21 @@ import React from 'react';
 import styled from 'styled-components';
 
 const DisplayBlock = styled.div`
-  height: 400px;
-  width: 600px;
+  margin: 10px;
+  /* height: 400px;
+  width: 600px; */
+  height: 40%;
+  width: 85%;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
+
+  p {
+    z-index: 1;
+    position: absolute;
+    font-size: x-large;
+  }
 
   img {
     width: 100%;
@@ -17,22 +26,36 @@ const DisplayBlock = styled.div`
     opacity: 0.9;
     filter: grayscale(1);
     border-radius: 25px;
-
-    :hover {
-      filter: none;
-    }
   }
+
+  :hover img {
+    filter: none;
+  }
+`;
+
+const WideDisplay = styled(DisplayBlock)`
+  width: 100%;
+  border: 1px solid #000;
 `;
 
 export default function PreviewDisplay() {
   return (
     <div>
-      <DisplayBlock>
-        <img src='/images/home-display/collection.jpeg' />
-      </DisplayBlock>
-      <DisplayBlock>
-        <img src='/images/home-display/collection2.png' />
-      </DisplayBlock>
+      <div>
+        <DisplayBlock>
+          <p>Collection coming soon...</p>
+          <img src='/images/home-display/collection.jpeg' />
+        </DisplayBlock>
+        <DisplayBlock>
+          <p>Workspace</p>
+          <img src='/images/home-display/collection2.png' />
+        </DisplayBlock>
+      </div>
+      <div>
+        <WideDisplay>
+          Wide display block
+        </WideDisplay>
+      </div>
     </div>
   )
 }
