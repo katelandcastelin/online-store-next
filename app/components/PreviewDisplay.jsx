@@ -2,6 +2,15 @@
 import React from 'react';
 import styled from 'styled-components';
 
+const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6rem;
+  min-height: 100vh;
+`;
+
 const DisplayBlock = styled.div`
   margin: 10px;
   /* height: 400px;
@@ -38,10 +47,23 @@ const WideDisplay = styled(DisplayBlock)`
   border: 1px solid #000;
 `;
 
+const SmallBlockContainer = styled.div`
+  display: grid;
+  grid-template-columns: repeat(3, minmax(25%, auto));
+  max-width: 100%;
+  width: var(--max-width);
+`;
+
+const WideBlockContainer = styled.div`
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+`;
+
 export default function PreviewDisplay() {
   return (
-    <div>
-      <div>
+    <Container>
+      <SmallBlockContainer>
         <DisplayBlock>
           <p>Collection coming soon...</p>
           <img src='/images/home-display/collection.jpeg' />
@@ -50,12 +72,12 @@ export default function PreviewDisplay() {
           <p>Workspace</p>
           <img src='/images/home-display/collection2.png' />
         </DisplayBlock>
-      </div>
-      <div>
+      </SmallBlockContainer>
+      <WideBlockContainer>
         <WideDisplay>
           Wide display block
         </WideDisplay>
-      </div>
-    </div>
+      </WideBlockContainer>
+    </Container>
   )
 }
