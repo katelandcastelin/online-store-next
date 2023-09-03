@@ -5,18 +5,18 @@ import styled from 'styled-components';
 const Container = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
   padding: 6rem;
   min-height: 100vh;
+  max-width: 100vw;
 `;
 
 const DisplayBlock = styled.div`
   margin: 10px;
-  /* height: 400px;
-  width: 600px; */
-  height: 40%;
-  width: 85%;
+  height: 300px;
+  width: 500px;
+  /* height: 40%;
+  width: 85%; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -43,15 +43,14 @@ const DisplayBlock = styled.div`
 `;
 
 const WideDisplay = styled(DisplayBlock)`
-  width: 100%;
+  width: 80%;
   border: 1px solid #000;
 `;
 
 const SmallBlockContainer = styled.div`
-  display: grid;
-  grid-template-columns: repeat(3, minmax(25%, auto));
-  max-width: 100%;
-  width: var(--max-width);
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
 `;
 
 const WideBlockContainer = styled.div`
@@ -70,6 +69,10 @@ export default function PreviewDisplay() {
         </DisplayBlock>
         <DisplayBlock>
           <p>Workspace</p>
+          <img src='/images/home-display/collection2.png' />
+        </DisplayBlock>
+        <DisplayBlock>
+          <p>Test</p>
           <img src='/images/home-display/collection2.png' />
         </DisplayBlock>
       </SmallBlockContainer>
