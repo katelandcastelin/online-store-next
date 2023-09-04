@@ -6,7 +6,7 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 6rem;
+  padding: 1rem;
   min-height: 100vh;
   max-width: 100vw;
 `;
@@ -34,7 +34,6 @@ const DisplayBlock = styled.div`
     object-fit: cover;
     opacity: 0.9;
     filter: grayscale(1);
-    border-radius: 25px;
   }
 
   :hover img {
@@ -43,18 +42,18 @@ const DisplayBlock = styled.div`
 `;
 
 const WideDisplay = styled(DisplayBlock)`
-  width: 80%;
-  border: 1px solid #000;
+  width: 100vw;
 `;
 
 const SmallBlockContainer = styled.div`
-  display: flex;
+  display: -webkit-inline-box;
   flex-flow: wrap;
   justify-content: center;
+  width: 100vw;
+  justify-content: space-around;
 `;
 
 const WideBlockContainer = styled.div`
-  width: 100vw;
   display: flex;
   justify-content: center;
 `;
@@ -68,7 +67,7 @@ export default function PreviewDisplay() {
           <img src='/images/home-display/collection.jpeg' />
         </DisplayBlock>
         <DisplayBlock>
-          <p>Workspace</p>
+          <p>Latest</p>
           <img src='/images/home-display/collection2.png' />
         </DisplayBlock>
         <DisplayBlock>
@@ -78,7 +77,8 @@ export default function PreviewDisplay() {
       </SmallBlockContainer>
       <WideBlockContainer>
         <WideDisplay>
-          Wide display block
+          <p>Workspace</p>
+          <img src='/images/home-display/work.png' />
         </WideDisplay>
       </WideBlockContainer>
     </Container>
