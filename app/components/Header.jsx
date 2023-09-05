@@ -88,6 +88,7 @@ export default function Header() {
       </HeaderLogo>
       <Links>
         <NavLink href="/corsets">Corsets</NavLink>
+        <NavLink href="/skirts">Skirts</NavLink>
         <NavLink href="/order">Order</NavLink>
         <NavLink href="/about">About</NavLink>
       </Links>
