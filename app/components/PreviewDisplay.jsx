@@ -11,7 +11,7 @@ const Container = styled.div`
   max-width: 100vw;
 `;
 
-const DisplayBlock = styled.div`
+const DisplayBlock = styled.a`
   margin: 10px;
   height: 300px;
   width: 500px;
@@ -62,9 +62,9 @@ export default function PreviewDisplay() {
   return (
     <Container>
       <SmallBlockContainer>
-        <DisplayBlock>
-          <p>(skirts) coming soon...</p>
-          {/* <img src='/images/home-display/collection.jpeg' /> */}
+        <DisplayBlock href="/skirts">
+          <p>Coming soon...</p>
+          <img src='/images/home-display/skirt.jpeg' />
         </DisplayBlock>
         <DisplayBlock>
           <p>Toile collection Latest</p>
