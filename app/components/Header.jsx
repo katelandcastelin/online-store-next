@@ -1,5 +1,6 @@
 'use client';
 import styled from "styled-components";
+import DropDownMenu from "./DropDownMenu";
 
 const HeaderContainer = styled.header`
   height: 150px;
@@ -46,8 +47,9 @@ const Logo = styled.img`
 const Links = styled.div`
   position: absolute;
 
-  @media (max-width: 1120px) {
+  @media (max-width: 1040px) {
     /* drop down icon display */
+    
   }
 `;
 
@@ -93,6 +95,7 @@ export default function Header() {
         <NavLink href="/about">About</NavLink>
       </Links>
       {/* <SaleButton href="/">SALE!</SaleButton> */}
+      <DropDownMenu />
     </HeaderContainer>
   )
 }
