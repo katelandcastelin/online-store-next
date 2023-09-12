@@ -56,6 +56,7 @@ const SmallBlockContainer = styled.div`
 const WideBlockContainer = styled.div`
   display: flex;
   justify-content: center;
+  margin-top: 10px;
 `;
 
 export default function PreviewDisplay() {
@@ -64,16 +65,16 @@ export default function PreviewDisplay() {
       <SmallBlockContainer>
         <DisplayBlock href="/skirts">
           <p>Coming soon...</p>
-          <img src='/images/home-display/skirt.jpeg' />
+          <img src='/images/skirt-products/birth-of-venus-skirt.png' />
         </DisplayBlock>
         <DisplayBlock>
           <p>Toile collection Latest</p>
-          <img src='/images/home-display/collection2.png' />
+          <img src='/images/home-display/toile.png' />
         </DisplayBlock>
-        <DisplayBlock href="/corsets">
+        {/* <DisplayBlock href="/corsets">
           <p>Shop corsets</p>
           <img src='/images/home-display/collection2.png' />
-        </DisplayBlock>
+        </DisplayBlock> */}
       </SmallBlockContainer>
       <WideBlockContainer>
         <WideDisplay>
