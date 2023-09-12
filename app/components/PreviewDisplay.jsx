@@ -70,8 +70,8 @@ export default function PreviewDisplay() {
           <p>Toile collection Latest</p>
           <img src='/images/home-display/collection2.png' />
         </DisplayBlock>
-        <DisplayBlock>
-          <p>Test</p>
+        <DisplayBlock href="/corsets">
+          <p>Shop corsets</p>
           <img src='/images/home-display/collection2.png' />
         </DisplayBlock>
       </SmallBlockContainer>

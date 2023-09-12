@@ -1,5 +1,6 @@
 'use client';
 import styled from "styled-components";
+import DropDownMenu from "./DropDownMenu";
 
 const HeaderContainer = styled.header`
   height: 150px;
@@ -46,8 +47,16 @@ const Logo = styled.img`
 const Links = styled.div`
   position: absolute;
 
-  @media (max-width: 1120px) {
-    /* drop down icon display */
+  @media (max-width: 1040px) {
+    display: none;
+  }
+`;
+
+const DropDownDiv = styled.div`
+  display: none;
+
+  @media (max-width: 1040px) {
+    display: flex;
   }
 `;
 
@@ -78,6 +87,9 @@ const SaleButton = styled.a`
 export default function Header() {
   return (
     <HeaderContainer>
+      {/* <DropDownDiv>
+        <DropDownMenu />
+      </DropDownDiv> */}
       <HeaderLogo href="/">
         <LogoContainer>
           <Logo src='/sewing-logo.png' />
@@ -93,6 +105,7 @@ export default function Header() {
         <NavLink href="/about">About</NavLink>
       </Links>
       {/* <SaleButton href="/">SALE!</SaleButton> */}
+      <DropDownMenu />
     </HeaderContainer>
   )
 }
