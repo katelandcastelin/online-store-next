@@ -87,9 +87,9 @@ const SaleButton = styled.a`
 export default function Header() {
   return (
     <HeaderContainer>
-      <DropDownDiv>
+      {/* <DropDownDiv>
         <DropDownMenu />
-      </DropDownDiv>
+      </DropDownDiv> */}
       <HeaderLogo href="/">
         <LogoContainer>
           <Logo src='/sewing-logo.png' />
@@ -105,6 +105,7 @@ export default function Header() {
         <NavLink href="/about">About</NavLink>
       </Links>
       {/* <SaleButton href="/">SALE!</SaleButton> */}
+      <DropDownMenu />
     </HeaderContainer>
   )
 }

@@ -1,7 +1,27 @@
 import * as React from 'react';
+import styled from 'styled-components';
 import Button from '@mui/material/Button';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
+import MenuIcon from '@mui/icons-material/Menu';
+
+const StyledMenuIcon = styled(MenuIcon)`
+  color: #555;
+`;
+
+const StyledMenu = styled(Menu)`
+  && {
+    
+  }
+`;
+
+const StyledMenuItem = styled(MenuItem)`
+  && {
+    font-size: large;
+    font-weight: 100;
+    margin: 10px;
+  }
+`;
 
 export default function BasicMenu() {
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -22,9 +42,9 @@ export default function BasicMenu() {
         aria-expanded={open ? 'true' : undefined}
         onClick={handleClick}
       >
-        Icon
+        <StyledMenuIcon fontSize='large' />
       </Button>
-      <Menu
+      <StyledMenu
         id="basic-menu"
         anchorEl={anchorEl}
         open={open}
@@ -33,27 +53,27 @@ export default function BasicMenu() {
           'aria-labelledby': 'basic-button',
         }}
       >
-        <MenuItem onClick={handleClose}>
+        <StyledMenuItem onClick={handleClose}>
           <a href='/corsets'>
             Corsets
           </a>
-        </MenuItem>
-        <MenuItem onClick={handleClose}>
+        </StyledMenuItem>
+        <StyledMenuItem onClick={handleClose}>
           <a href='/skirts'>
             Skirts
           </a>
-        </MenuItem>
-        <MenuItem onClick={handleClose}>
+        </StyledMenuItem>
+        <StyledMenuItem onClick={handleClose}>
           <a href='/order'>
             Order
           </a>
-        </MenuItem>
-        <MenuItem onClick={handleClose}>
+        </StyledMenuItem>
+        <StyledMenuItem onClick={handleClose}>
           <a href='/about'>
             About
           </a>
-        </MenuItem>
-      </Menu>
+        </StyledMenuItem>
+      </StyledMenu>
     </div>
   );
 }
