@@ -7,9 +7,16 @@ export default function Home() {
     <div>
       <img
         className={styles.img} 
-        src='/home-page-corner.png'
+        src='/border1.png'
+      />
+      <img
+        className={styles.img2} 
+        src='/border1.png'
       />
       <PreviewDisplay />
+      <div className={styles.bottomBorderContainer}>
+        <img className={styles.bottomBorder} src='/bottom-border.png' />
+      </div>
     </div>
   )
 }

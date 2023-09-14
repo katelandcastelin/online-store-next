@@ -8,9 +8,24 @@
 }
 
 .img {
-  height: 180px;
+  width: 280px;
+  position: absolute;
+}
+
+.img2 {
+  width: 280px;
   position: absolute;
   right: 0;
+  transform: scalex(-1);
+}
+
+.bottomBorderContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.bottomBorder {
+  width: 70vw;
 }
 
 .homeContainer {
