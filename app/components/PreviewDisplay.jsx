@@ -15,8 +15,6 @@ const DisplayBlock = styled.a`
   margin: 10px;
   height: 300px;
   width: 500px;
-  /* height: 40%;
-  width: 85%; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -25,7 +23,14 @@ const DisplayBlock = styled.a`
   p {
     z-index: 1;
     position: absolute;
-    font-size: x-large;
+    font-size: 25px;
+    color: #000;
+    transition: color 0.3s ease-in-out, font-size 0.3s ease-in-out;;
+  }
+
+  :hover p {
+    color: #555;
+    font-size: 24px;
   }
 
   img {
@@ -34,6 +39,7 @@ const DisplayBlock = styled.a`
     object-fit: cover;
     opacity: 0.9;
     filter: grayscale(1);
+    transition: filter 0.3s ease-in-out;
   }
 
   :hover img {
@@ -51,6 +57,10 @@ const SmallBlockContainer = styled.div`
   justify-content: center;
   width: 100vw;
   justify-content: space-around;
+
+  img {
+    border-radius: 5px;
+  }
 `;
 
 const WideBlockContainer = styled.div`
@@ -71,10 +81,6 @@ export default function PreviewDisplay() {
           <p>Toile collection Latest</p>
           <img src='/images/home-display/toile.png' />
         </DisplayBlock>
-        {/* <DisplayBlock href="/corsets">
-          <p>Shop corsets</p>
-          <img src='/images/home-display/collection2.png' />
-        </DisplayBlock> */}
       </SmallBlockContainer>
       <WideBlockContainer>
         <WideDisplay>

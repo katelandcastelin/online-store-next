@@ -7,6 +7,12 @@
   min-height: 100vh;
 }
 
+.img {
+  height: 180px;
+  position: absolute;
+  right: 0;
+}
+
 .homeContainer {
   padding: 10px;
 }

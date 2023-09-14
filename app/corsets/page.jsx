@@ -4,11 +4,12 @@ import styles from './corsetsPage.module.css';
 import corsetProducts from '../corsetsProducts-data/corsetsProducts';
 
 export default function CorsetsPage() {
+  const corsets = corsetProducts.reverse();
   return (
     <div className={styles.main}>
       <h1>Shop Corsets</h1>
       <div className={styles.grid}>
-        {corsetProducts.map((item) => (
+        {corsets.map((item) => (
           <Link key={item.id} href={`/corsets/${item.id}`} className={styles.card}>
             <div>
               <div className={styles.corsetImage}>

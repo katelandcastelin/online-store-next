@@ -17,7 +17,6 @@ const StyledMenu = styled(Menu)`
 
 const StyledMenuItem = styled(MenuItem)`
   && {
-    font-size: large;
     font-weight: 100;
     margin: 10px;
   }

@@ -4,7 +4,6 @@ import DropDownMenu from "./DropDownMenu";
 
 const HeaderContainer = styled.header`
   height: 150px;
-  border-bottom: 1px solid #b4b4bc;
   padding: 0% 6%;
   display: flex;
   align-items: center;
@@ -68,11 +67,6 @@ const NavLink = styled.a`
 
   &:hover {
     text-decoration: underline;
-    /* drop down for
-      available
-      new
-      
-     */
   }
 `;
 
