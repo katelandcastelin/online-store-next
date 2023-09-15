@@ -76,7 +76,7 @@ export default function PreviewDisplay() {
           <p>Coming soon...</p>
           <img src='/images/skirt-products/birth-of-venus-skirt.png' />
         </DisplayBlock>
-        <DisplayBlock>
+        <DisplayBlock href='/corsets'>
           <p>Toile collection Latest</p>
           <img src='/images/home-display/toile.png' />
         </DisplayBlock>

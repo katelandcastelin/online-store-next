@@ -70,20 +70,29 @@ const NavLink = styled.a`
   }
 `;
 
-const SaleButton = styled.a`
-  font-weight: bold;
-  color: red;
+const LogInButton = styled.a`
+  font-weight: 500;
   position: absolute;
   right: 6%;
   margin: 10px;
+  color: #bb92b7;
+`;
+
+const WhiteBlock = styled.div`
+  height: 100%;
+  width: 100vw;
+  background-color: #fff;
+  position: absolute;
+  z-index: -2;
+  left: 0;
 `;
 
 export default function Header() {
   return (
     <HeaderContainer>
-      {/* <DropDownDiv>
+      <DropDownDiv>
         <DropDownMenu />
-      </DropDownDiv> */}
+      </DropDownDiv>
       <HeaderLogo href="/">
         <LogoContainer>
           <Logo src='/sewing-logo.png' />
@@ -98,8 +107,9 @@ export default function Header() {
         <NavLink href="/order">Order</NavLink>
         <NavLink href="/about">About</NavLink>
       </Links>
-      {/* <SaleButton href="/">SALE!</SaleButton> */}
-      <DropDownMenu />
+      <LogInButton href="/">Log in</LogInButton>
+      {/* <DropDownMenu /> */}
+      <WhiteBlock />
     </HeaderContainer>
   )
 }
