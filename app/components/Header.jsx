@@ -107,7 +107,7 @@ export default function Header() {
         <NavLink href="/order">Order</NavLink>
         <NavLink href="/about">About</NavLink>
       </Links>
-      <LogInButton href="/">Log in</LogInButton>
+      <LogInButton href="/log-in">Log in</LogInButton>
       {/* <DropDownMenu /> */}
       <WhiteBlock />
     </HeaderContainer>

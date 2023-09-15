@@ -1,0 +1,29 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6rem;
+  min-height: 100vh;
+}
+
+.formsContainer {
+  display: flex;
+  text-align: center;
+  height: 50vh;
+  width: 100%;
+}
+
+.logIn {
+  border: 1px solid #000;
+  height: 100%;
+  width: 100%;
+  margin: 5px;
+}
+
+.signUp {
+  border: 1px solid #000;
+  height: 100%;
+  width: 100%;
+  margin: 5px;
+}
