@@ -3,29 +3,28 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 6rem;
+  padding-top: 4rem;
   min-height: 100vh;
 }
 
 .formsContainer {
   display: flex;
+  justify-content: space-evenly;
   text-align: center;
   height: 50vh;
-  width: 100%;
+  width: 80%;
 }
 
 .logIn {
-  border: 1px solid #000;
   height: 100%;
   width: 100%;
-  margin: 5px;
+  margin-right: 50px;
 }
 
 .signUp {
-  border: 1px solid #000;
   height: 100%;
   width: 100%;
-  margin: 5px;
+  margin-left: 50px;
 }
 
 .form {
@@ -33,7 +32,7 @@
   flex-direction: column;
 }
 
-.input {
-  background-color: #fff;
-  border: none;
+.formHeader {
+  font-size: large;
+  margin-bottom: 20px;
 }
