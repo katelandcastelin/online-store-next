@@ -27,3 +27,13 @@
   width: 100%;
   margin: 5px;
 }
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.input {
+  background-color: #fff;
+  border: none;
+}
