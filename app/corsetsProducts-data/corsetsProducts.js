@@ -53,6 +53,18 @@ const corsetProducts = [
     price: 1050,
     description: 'The Creation of Adam',
   },
+  {
+    id: 10,
+    image: '/images/corsets/beige2.png',
+    price: 1050,
+    description: 'Toile de Jouy',
+  },
+  {
+    id: 11,
+    image: '/images/corsets/berry1.png',
+    price: 1050,
+    description: 'Berries',
+  },
 ];
 
 export default corsetProducts;

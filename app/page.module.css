@@ -7,6 +7,31 @@
   min-height: 100vh;
 }
 
+.img {
+  width: 400px;
+  position: absolute;
+  z-index: -1;
+  opacity: 0.8;
+}
+
+.img2 {
+  width: 400px;
+  position: absolute;
+  right: 0;
+  transform: scalex(-1);
+  z-index: -1;
+  opacity: 0.8;
+}
+
+.bottomBorderContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.bottomBorder {
+  width: 70vw;
+}
+
 .homeContainer {
   padding: 10px;
 }

@@ -7,8 +7,23 @@
 }
 
 .main h1 {
-  padding-bottom: 3rem;
   color: #777777;
+}
+
+.headerContainer {
+  padding-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.bottomBorder {
+  opacity: 0.1;
+  width: 100vw;
+  position: absolute;
+  z-index: -3;
 }
 
 .grid {
@@ -78,7 +93,7 @@
 
 @media (min-width: 701px) and (max-width: 1120px) {
   .grid {
-    grid-template-columns: repeat(2, 50%);
+    grid-template-columns: repeat(1, 100%);
   }
 }
 
