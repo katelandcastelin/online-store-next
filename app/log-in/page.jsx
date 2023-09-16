@@ -39,7 +39,6 @@ const Unicorn = styled.div`
   img {
     height: 500px;
     opacity: 0.6;
-    transition: 1s ease-in-out;
 
     &:hover {
       content: url('/images/background-images/unicorn2.png');
@@ -47,9 +46,25 @@ const Unicorn = styled.div`
   }
 `;
 
+const RightCorner = styled.div`
+  position: absolute;
+  right: 0;
+  transform: scalex(-1);
+  z-index: -1;
+  opacity: 0.3;
+
+  img {
+    width: 400px;
+    transform: translateY(-55px);
+  }
+`;
+
 export default function LogInPage() {
   return (
     <div className={styles.main}>
+      <RightCorner>
+        <img src='/images/background-images/corner1.png' />
+      </RightCorner>
       <div className={styles.formsContainer}>
         <div className={styles.formBlock}>
           <form className={styles.form}>
