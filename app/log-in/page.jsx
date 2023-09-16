@@ -5,38 +5,64 @@ import styled from 'styled-components';
 
 const Label = styled.label`
   margin-bottom: 10px;
+  color: #555;
 `;
 
 const Input = styled.input`
   background-color: #fff;
-  border: none;
+  border: 1px solid #cfd4d5;
   border-radius: 5px;
   padding: 15px;
   margin-bottom: 20px;
+  color: #555;
+  z-index: 1;
 `;
 
 const SubmitButton = styled.input`
   padding: 10px 20px;
   border: none;
   border-radius: 10px;
+  cursor: pointer;
+  position: relative;
+  z-index: 3;
+
+  &:hover {
+    filter: opacity(0.8);
+  }
+`;
+
+const Unicorn = styled.div`
+  position: absolute;
+  left: 3%;
+  transform: translateY(40%);
+
+  img {
+    height: 500px;
+    opacity: 0.6;
+    transition: 1s ease-in-out;
+
+    &:hover {
+      content: url('/images/background-images/unicorn2.png');
+    }
+  }
 `;
 
 export default function LogInPage() {
   return (
     <div className={styles.main}>
       <div className={styles.formsContainer}>
-        <div className={styles.logIn}>
+        <div className={styles.formBlock}>
           <form className={styles.form}>
             <p className={styles.formHeader}>Log in</p>
-            <Label>Username</Label>
-            <Input type="username" placeholder="Enter Username" name="uname" required />
+            <Label>Username or email</Label>
+            <Input type="username" placeholder="Enter Username or email" name="uname" required />
             <Label>Password</Label>
             <Input type="password" placeholder="Enter Password" name="pwd" required />
           </form>
           <SubmitButton type="submit" value="Log in" />
         </div>
 
-        <div className={styles.signUp}>
+        <div className={styles.formBlock}>
           <form className={styles.form}>
             <p className={styles.formHeader}>Sign me up</p>
             <Label>Username</Label>
@@ -51,6 +77,9 @@ export default function LogInPage() {
           <SubmitButton type="submit" value="Sign up" />
         </div>
       </div>
+      <Unicorn>
+        <img src='/images/background-images/unicorn.png' />
+      </Unicorn>
     </div>
   )
 }

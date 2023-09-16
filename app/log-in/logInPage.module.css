@@ -11,28 +11,28 @@
   display: flex;
   justify-content: space-evenly;
   text-align: center;
-  height: 50vh;
-  width: 80%;
+  width: 90%;
 }
 
-.logIn {
+.formBlock {
   height: 100%;
-  width: 100%;
-  margin-right: 50px;
-}
-
-.signUp {
-  height: 100%;
-  width: 100%;
-  margin-left: 50px;
+  width: 45%;
+  border: 1px solid #dddddd;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 0 40px;
 }
 
 .form {
   display: flex;
   flex-direction: column;
+  padding: 0 30px;
 }
 
 .formHeader {
-  font-size: large;
-  margin-bottom: 20px;
+  color: #848484;
+  font-size: 23px;
+  font-weight: 500;
+  margin-bottom: 35px;
+  letter-spacing: 0.5px;
 }
