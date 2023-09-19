@@ -59,12 +59,26 @@ const RightCorner = styled.div`
   }
 `;
 
+const LeftCorner = styled(RightCorner)`
+  transform: none;
+  left: 0;
+  opacity: 0.7;
+  z-index: 1;
+  
+  img {
+    width: 180px;
+  }
+`;
+
 export default function LogInPage() {
   return (
     <div className={styles.main}>
       <RightCorner>
         <img src='/images/background-images/corner1.png' />
       </RightCorner>
+      {/* <LeftCorner>
+        <img src='/images/background-images/log-in.png' />
+      </LeftCorner> */}
       <div className={styles.formsContainer}>
         <div className={styles.formBlock}>
           <form className={styles.form}>

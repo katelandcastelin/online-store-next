@@ -7,12 +7,12 @@ export default function Home() {
     <div>
       <img
         className={styles.img} 
-        src='/images/background-images/banner1.png'
+        src='/images/background-images/open-sign.png'
       />
-      <img
+      {/* <img
         className={styles.img2} 
-        src='/images/background-images/banner1.png'
-      />
+        src='/images/background-images/corner-rose.png'
+      /> */}
       <PreviewDisplay />
     </div>
   )
