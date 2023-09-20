@@ -5,10 +5,10 @@ import PreviewDisplay from './components/PreviewDisplay';
 export default function Home() {
   return (
     <div>
-      <img
+      {/* <img
         className={styles.img} 
         src='/images/background-images/open-sign.png'
-      />
+      /> */}
       {/* <img
         className={styles.img2} 
         src='/images/background-images/corner-rose.png'

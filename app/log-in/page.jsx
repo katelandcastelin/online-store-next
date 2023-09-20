@@ -29,6 +29,10 @@ const SubmitButton = styled.input`
   &:hover {
     filter: opacity(0.8);
   }
+
+  &:active {
+    filter: none;
+  }
 `;
 
 const Unicorn = styled.div`
@@ -101,7 +105,7 @@ export default function LogInPage() {
             <Label>Password</Label>
             <Input type="password" placeholder="Enter Password" name="pwd" required />
             <Label>Confirm password</Label>
-            <Input type="confirm password" placeholder="Confirm Password" name="pwd" required />
+            <Input type="password" placeholder="Confirm Password" name="pwd" required />
           </form>
           <SubmitButton type="submit" value="Sign up" />
         </div>
