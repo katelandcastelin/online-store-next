@@ -7,7 +7,7 @@
   min-height: 100vh;
 }
 
-.img {
+.left {
   width: 200px;
   position: absolute;
   z-index: -1;
@@ -15,14 +15,14 @@
   padding: 5px;
 }
 
-.img2 {
-  width: 250px;
+.right {
+  width: 360px;
   position: absolute;
   right: 0;
   transform: scalex(-1);
   z-index: -1;
   opacity: 0.4;
-  padding-top: 25px;
+  /* padding-top: 25px; */
 }
 
 .homeContainer {

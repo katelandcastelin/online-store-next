@@ -55,6 +55,10 @@
     flex-direction: column;
     width: 65%;
   }
+
+  .formBlock {
+    margin-bottom: 50px;
+  }
 }
 
 @media (max-width: 800px) {

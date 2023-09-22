@@ -6,12 +6,12 @@ export default function Home() {
   return (
     <div>
       {/* <img
-        className={styles.img} 
+        className={styles.left} 
         src='/images/background-images/open-sign.png'
       /> */}
       {/* <img
-        className={styles.img2} 
-        src='/images/background-images/corner-rose.png'
+        className={styles.right} 
+        src='/images/background-images/corner1.png'
       /> */}
       <PreviewDisplay />
     </div>

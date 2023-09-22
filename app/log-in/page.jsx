@@ -66,11 +66,12 @@ const RightCorner = styled.div`
 const LeftCorner = styled(RightCorner)`
   transform: none;
   left: 0;
-  opacity: 0.7;
+  opacity: 0.3;
   z-index: 1;
   
   img {
-    width: 180px;
+    width: 400px;
+    /* transform: scale(-1); */
   }
 `;
 
@@ -110,9 +111,12 @@ export default function LogInPage() {
           <SubmitButton type="submit" value="Sign up" />
         </div>
       </div>
-      <Unicorn>
+      {/* <Unicorn>
         <img src='/images/background-images/unicorn.png' />
-      </Unicorn>
+      </Unicorn> */}
+      <LeftCorner>
+        <img src='/images/background-images/corner1.png' />
+      </LeftCorner>
     </div>
   )
 }
