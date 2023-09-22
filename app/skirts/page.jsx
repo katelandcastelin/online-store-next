@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import styles from './skirtsPage.module.css';
-import corsetProducts from '../corsetsProducts-data/corsetsProducts';
+import corsetProducts from '../corsets/corsetsProducts-data/corsetsProducts';
 import skirtProducts from './skirtsProducts-data/skirtsProducts';
 
 export default function SkirtsPage() {

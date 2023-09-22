@@ -20,7 +20,7 @@
 }
 
 .bottomBorder {
-  opacity: 0.1;
+  opacity: 0.05;
   width: 100vw;
   position: absolute;
   z-index: -3;

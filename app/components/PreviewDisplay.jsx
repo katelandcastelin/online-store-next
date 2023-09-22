@@ -74,7 +74,7 @@ export default function PreviewDisplay() {
       <SmallBlockContainer>
         <DisplayBlock href="/skirts">
           <p>Coming soon...</p>
-          <img src='/images/skirt-products/birth-of-venus-skirt.png' />
+          <img src='/images/home-display/figure-skirt.png' />
         </DisplayBlock>
         <DisplayBlock href='/corsets'>
           <p>Toile collection Latest</p>

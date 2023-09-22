@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import styles from './corsetsPage.module.css';
-import corsetProducts from '../corsetsProducts-data/corsetsProducts';
+import corsetProducts from './corsetsProducts-data/corsetsProducts';
 
 export default function CorsetsPage() {
   const corsets = corsetProducts.reverse();

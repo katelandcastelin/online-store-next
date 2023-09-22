@@ -12,7 +12,7 @@ const HeaderContainer = styled.header`
   &::before {
     content: "";
     position: absolute;
-    background-image: url('/images/background/binding.png');
+    background-image: url('/images/header/binding.png');
     background-size: 100vw;
     background-repeat: no-repeat;
     opacity: 0.8;
@@ -75,7 +75,7 @@ const LogInButton = styled.a`
   position: absolute;
   right: 6%;
   margin: 10px;
-  color: #bb92b7;
+  color: #cca8c9;
 `;
 
 const WhiteBlock = styled.div`
@@ -107,7 +107,7 @@ export default function Header() {
         <NavLink href="/order">Order</NavLink>
         <NavLink href="/about">About</NavLink>
       </Links>
-      <LogInButton href="/">Log in</LogInButton>
+      <LogInButton href="/log-in">Log in</LogInButton>
       {/* <DropDownMenu /> */}
       <WhiteBlock />
     </HeaderContainer>
