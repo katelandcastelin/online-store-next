@@ -56,9 +56,11 @@ const RightCorner = styled.div`
   transform: scalex(-1);
   z-index: -1;
   opacity: 0.3;
+  width: 50%;
 
   img {
-    width: 400px;
+    width: 100%;
+    max-width: 400px;
     transform: translateY(-55px);
   }
 `;
@@ -68,10 +70,11 @@ const LeftCorner = styled(RightCorner)`
   left: 0;
   opacity: 0.3;
   z-index: 1;
+  width: 50%;
   
   img {
-    width: 400px;
-    /* transform: scale(-1); */
+    width: 100%;
+    max-width: 400px;
   }
 `;
 

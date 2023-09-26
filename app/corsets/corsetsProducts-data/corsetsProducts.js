@@ -55,15 +55,33 @@ const corsetProducts = [
   },
   {
     id: 10,
-    image: '/images/corsets/beige2.png',
+    image: '/images/corsets/beige-toile/beige2.png',
     price: 1050,
     description: 'Toile de Jouy',
   },
   {
     id: 11,
-    image: '/images/corsets/berry1.png',
+    image: '/images/corsets/berry/berry1.png',
     price: 1050,
     description: 'Berries',
+  },
+  {
+    id: 12,
+    image: '/images/corsets/sn-fb/sn-fb.png',
+    price: 1050,
+    description: 'Starry Night full bust',
+  },
+  {
+    id: 13,
+    image: '/images/corsets/bov-fb/bov-fb.png',
+    price: 1050,
+    description: 'Birth of Venus full bust',
+  },
+  {
+    id: 14,
+    image: '/images/corsets/prim-fb/prim-fb.png',
+    price: 1050,
+    description: 'Primavera full bust',
   },
 ];
 
