@@ -2,6 +2,7 @@
 import React, { useEffect } from 'react';
 import styled from 'styled-components';
 import Accordion from './Accordion';
+import ProductGallery from './ProductGallery';
 
 const Container = styled.div`
   height: 100vh;
@@ -45,6 +46,7 @@ export default function ProductDetails({ product }) {
 
   return (
     <Container>
+      <ProductGallery />
       <ImageContainer>
         <img src={product.image} />
       </ImageContainer>
