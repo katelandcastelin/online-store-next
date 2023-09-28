@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
+import corsetItems from '../corsets/corsetItemGallery-data/corsetItemGallery';
 
 const Container = styled.div`
   height: 90%;
@@ -59,16 +60,16 @@ const itemData = [
   },
 ];
 
-export default function ProductGallery() {
+export default function ProductGallery({ images }) {
   return (
     <Container>
       <ImageList sx={{ width: 150, height: '100%' }} cols={1} rowHeight={164}>
-        {itemData.map((item) => (
-          <ImageListItem key={item.img}>
+        {images.map((image, index) => (
+          <ImageListItem key={index}>
             <img
-              srcSet={`${item.img}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
-              src={`${item.img}?w=164&h=164&fit=crop&auto=format`}
-              alt={item.title}
+              srcSet={`${image}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
+              src={`${image}?w=164&h=164&fit=crop&auto=format`}
+              alt={index}
               loading="lazy"
             />
           </ImageListItem>

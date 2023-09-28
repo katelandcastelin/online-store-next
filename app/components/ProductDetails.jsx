@@ -3,6 +3,7 @@ import React, { useEffect } from 'react';
 import styled from 'styled-components';
 import Accordion from './Accordion';
 import ProductGallery from './ProductGallery';
+import corsetItems from '../corsets/corsetItemGallery-data/corsetItemGallery';
 
 const Container = styled.div`
   height: 100vh;
@@ -20,7 +21,6 @@ const ImageContainer = styled.div`
 
   img {
     width: 100%;
-    height: 100%;
     object-fit: cover;
   }
 `;
@@ -40,13 +40,16 @@ const Price = styled.p`
 `;
 
 export default function ProductDetails({ product }) {
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [product]);
 
+  const productImages = corsetItems.find(item => item.id === product.id)?.images || [];
+
   return (
     <Container>
-      <ProductGallery />
+      <ProductGallery images={productImages} />
       <ImageContainer>
         <img src={product.image} />
       </ImageContainer>

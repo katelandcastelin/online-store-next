@@ -1,9 +1,12 @@
+import corsetItems from "../corsetItemGallery-data/corsetItemGallery";
+
 const corsetProducts = [
   {
     id: 1,
     image: '/images/order-products/botanical-test.png',
     price: 880,
     description: 'Botanical',
+    images: corsetItems.find(item => item.id === 10).images,
   },
   {
     id: 2,
@@ -58,12 +61,14 @@ const corsetProducts = [
     image: '/images/corsets/beige-toile/beige2.png',
     price: 1050,
     description: 'Toile de Jouy',
+    images: corsetItems.find(item => item.id === 10).images,
   },
   {
     id: 11,
     image: '/images/corsets/berry/berry1.png',
     price: 1050,
     description: 'Berries',
+    images: corsetItems.find(item => item.id === 11).images,
   },
   {
     id: 12,
