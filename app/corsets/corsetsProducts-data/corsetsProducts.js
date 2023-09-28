@@ -6,7 +6,7 @@ const corsetProducts = [
     image: '/images/order-products/botanical-test.png',
     price: 880,
     description: 'Botanical',
-    images: corsetItems.find(item => item.id === 10).images,
+    images: corsetItems.find(item => item.id === 1).images,
   },
   {
     id: 2,
