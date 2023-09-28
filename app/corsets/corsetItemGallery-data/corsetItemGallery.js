@@ -14,6 +14,10 @@ const corsetItems = [
     images: [
       '/images/corsets/toile-ub/1.jpeg',
       '/images/corsets/toile-ub/2.jpeg',
+      '/images/corsets/toile-ub/3.jpeg',
+      '/images/corsets/toile-ub/4.jpeg',
+      '/images/corsets/toile-ub/5.jpeg',
+      '/images/corsets/toile-ub/6.jpeg',
     ]
   },
   {
@@ -39,25 +43,37 @@ const corsetItems = [
   {
     id: 5,
     images: [
-      
+      '/images/corsets/sn-ub/1.jpg',
+      '/images/corsets/sn-ub/2.jpg',
     ]
   },
   {
     id: 6,
     images: [
-      
+      '/images/corsets/tapestry/1.jpeg',
+      '/images/corsets/tapestry/2.jpeg',
+      '/images/corsets/tapestry/3.jpeg',
+      '/images/corsets/tapestry/4.jpeg',
+      '/images/corsets/tapestry/5.jpeg',
+      '/images/corsets/tapestry/6.jpeg',
+      '/images/corsets/tapestry/7.jpeg',
     ]
   },
   {
     id: 7,
     images: [
-      
+      '/images/corsets/chain-ub/1.jpg',
+      '/images/corsets/chain-ub/2.jpg',
+      '/images/corsets/chain-ub/3.jpg',
+      '/images/corsets/chain-ub/4.jpg',
     ]
   },
   {
     id: 8,
     images: [
-      
+      '/images/corsets/bov-strapless/1.jpg',
+      '/images/corsets/bov-strapless/2.jpg',
+      '/images/corsets/bov-strapless/3.jpg',
     ]
   },
   {
