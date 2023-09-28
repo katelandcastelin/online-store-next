@@ -79,7 +79,11 @@ const corsetItems = [
   {
     id: 9,
     images: [
-      
+      '/images/corsets/coa/1.png',
+      '/images/corsets/coa/2.png',
+      '/images/corsets/coa/3.png',
+      '/images/corsets/coa/4.png',
+      '/images/corsets/coa/5.png',
     ]
   },
   {
@@ -109,19 +113,34 @@ const corsetItems = [
   {
     id: 12,
     images: [
-      
+      '/images/corsets/sn-straps/1.png',
+      '/images/corsets/sn-straps/2.png',
+      '/images/corsets/sn-straps/3.png',
+      '/images/corsets/sn-straps/4.png',
+      '/images/corsets/sn-straps/5.png',
+      '/images/corsets/sn-straps/6.png',
     ]
   },
   {
     id: 13,
     images: [
-      
+      '/images/corsets/bov-straps/1.png',
+      '/images/corsets/bov-straps/2.png',
+      '/images/corsets/bov-straps/3.png',
+      '/images/corsets/bov-straps/4.png',
+      '/images/corsets/bov-straps/5.png',
     ]
   },
   {
     id: 14,
     images: [
-      
+      '/images/corsets/prim-fb/1.png',
+      '/images/corsets/prim-fb/2.png',
+      '/images/corsets/prim-fb/3.png',
+      '/images/corsets/prim-fb/4.png',
+      '/images/corsets/prim-fb/5.png',
+      '/images/corsets/prim-fb/6.png',
+      '/images/corsets/prim-fb/7.png',
     ]
   },
 ];

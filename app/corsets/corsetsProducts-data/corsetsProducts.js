@@ -59,9 +59,10 @@ const corsetProducts = [
   },
   {
     id: 9,
-    image: '/images/order-products/coa.png',
+    image: '/images/corsets/coa/1.png',
     price: 1050,
     description: 'The Creation of Adam',
+    images: corsetItems.find(item => item.id === 9).images,
   },
   {
     id: 10,
@@ -79,21 +80,24 @@ const corsetProducts = [
   },
   {
     id: 12,
-    image: '/images/corsets/sn-fb/sn-fb.png',
+    image: '/images/corsets/sn-straps/1.png',
     price: 1050,
     description: 'Starry Night full bust',
+    images: corsetItems.find(item => item.id === 12).images,
   },
   {
     id: 13,
-    image: '/images/corsets/bov-fb/bov-fb.png',
+    image: '/images/corsets/bov-straps/1.png',
     price: 1050,
-    description: 'Birth of Venus full bust',
+    description: 'Birth of Venus with straps full bust',
+    images: corsetItems.find(item => item.id === 13).images,
   },
   {
     id: 14,
-    image: '/images/corsets/prim-fb/prim-fb.png',
+    image: '/images/corsets/prim-fb/1.png',
     price: 1050,
     description: 'Primavera full bust',
+    images: corsetItems.find(item => item.id === 14).images,
   },
 ];
 
