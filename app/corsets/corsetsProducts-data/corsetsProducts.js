@@ -3,28 +3,31 @@ import corsetItems from "../corsetItemGallery-data/corsetItemGallery";
 const corsetProducts = [
   {
     id: 1,
-    image: '/images/order-products/botanical-test.png',
+    image: '/images/corsets/botanical-fl/1.png',
     price: 880,
     description: 'Botanical',
     images: corsetItems.find(item => item.id === 1).images,
   },
   {
     id: 2,
-    image: '/images/order-products/ub-toile-front.jpeg',
+    image: '/images/corsets/toile-ub/1.jpeg',
     price: 990,
     description: 'Toile de Jouy',
+    images: corsetItems.find(item => item.id === 2).images,
   },
   {
     id: 3,
-    image: '/images/order-products/three-graces.jpg',
+    image: '/images/corsets/three-graces/1.jpg',
     price: 1050,
     description: 'The Three Graces',
+    images: corsetItems.find(item => item.id === 3).images,
   },
   {
     id: 4,
-    image: '/images/order-products/cat-1.jpg',
+    image: '/images/corsets/pot-cat/1.jpg',
     price: 880,
     description: 'Pot Cat',
+    images: corsetItems.find(item => item.id === 4).images,
   },
   {
     id: 5,
@@ -58,7 +61,7 @@ const corsetProducts = [
   },
   {
     id: 10,
-    image: '/images/corsets/beige-toile/beige2.png',
+    image: '/images/corsets/beige-toile/beige1.png',
     price: 1050,
     description: 'Toile de Jouy',
     images: corsetItems.find(item => item.id === 10).images,

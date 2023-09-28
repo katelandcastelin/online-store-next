@@ -6,24 +6,34 @@ const corsetItems = [
       '/images/corsets/botanical-fl/2.png',
       '/images/corsets/botanical-fl/3.png',
       '/images/corsets/botanical-fl/4.png',
+      '/images/corsets/botanical-fl/5.png',
     ]
   },
   {
     id: 2,
     images: [
-      
+      '/images/corsets/toile-ub/1.jpeg',
+      '/images/corsets/toile-ub/2.jpeg',
     ]
   },
   {
     id: 3,
     images: [
-      
+      '/images/corsets/three-graces/1.jpg',
+      '/images/corsets/three-graces/2.png',
+      '/images/corsets/three-graces/3.png',
+      '/images/corsets/three-graces/4.png',
+      '/images/corsets/three-graces/5.png',
     ]
   },
   {
     id: 4,
     images: [
-      
+      '/images/corsets/pot-cat/1.jpg',
+      '/images/corsets/pot-cat/2.jpg',
+      '/images/corsets/pot-cat/3.jpg',
+      '/images/corsets/pot-cat/4.jpg',
+      '/images/corsets/pot-cat/5.jpg',
     ]
   },
   {
