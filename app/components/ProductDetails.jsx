@@ -3,7 +3,7 @@ import React, { useEffect } from 'react';
 import styled from 'styled-components';
 import Accordion from './Accordion';
 import ProductGallery from './ProductGallery';
-import corsetItems from '../corsets/corsetItemGallery-data/corsetItemGallery';
+import corsetProducts from '../corsets/corsetsProducts-data/corsetsProducts';
 
 const Container = styled.div`
   height: 100vh;
@@ -45,7 +45,7 @@ export default function ProductDetails({ product }) {
     window.scrollTo(0, 0);
   }, [product]);
 
-  const productImages = corsetItems.find(item => item.id === product.id)?.images || [];
+  const productImages = corsetProducts.find(item => item.id === product.id)?.images || [];
 
   return (
     <Container>
