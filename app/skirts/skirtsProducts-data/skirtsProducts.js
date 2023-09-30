@@ -15,6 +15,20 @@ const skirtProducts = [
     description: 'Birth of Venus',
     images: skirtGallery.find(item => item.id === 'S2').images,
   },
+  {
+    id: 'S3',
+    image: '/images/skirts/sn/1.png',
+    price: 880,
+    description: 'Starry Night',
+    images: skirtGallery.find(item => item.id === 'S3').images,
+  },
+  {
+    id: 'S4',
+    image: '/images/skirts/ab/1.png',
+    price: 880,
+    description: 'Almond Blossoms',
+    images: skirtGallery.find(item => item.id === 'S4').images,
+  },
 ];
 
 export default skirtProducts;

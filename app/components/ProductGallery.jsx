@@ -8,21 +8,37 @@ const Container = styled.div`
   margin-right: 10px;
 `;
 
-export default function ProductGallery({ images }) {
+const ThumbnailList = styled(ImageList)`
+  max-height: 100%;
+  height: auto;
+  width: 150px;
+`;
+
+const ImageThumbnail = styled(ImageListItem)`
+  cursor: pointer;
+
+  img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+  }
+`;
+
+export default function ProductGallery({ images, setSelectedImage }) {
   return (
     <Container>
-      <ImageList sx={{ width: 150, height: '100%' }} cols={1} rowHeight={164}>
+      <ThumbnailList cols={1} rowHeight={164}>
         {images.map((image, index) => (
-          <ImageListItem key={index}>
+          <ImageThumbnail key={index} onClick={() => setSelectedImage(image)}>
             <img
               srcSet={image}
               src={image}
               alt={index}
               loading="lazy"
             />
-          </ImageListItem>
+          </ImageThumbnail>
         ))}
-      </ImageList>
+      </ThumbnailList>
     </Container>
   )
 }
