@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import Accordion from './Accordion';
 import ProductGallery from './ProductGallery';
 import corsetProducts from '../corsets/corsetsProducts-data/corsetsProducts';
+import skirtProducts from '../skirts/skirtsProducts-data/skirtsProducts';
 
 const Container = styled.div`
   height: 100vh;
@@ -46,6 +47,7 @@ export default function ProductDetails({ product }) {
   }, [product]);
 
   const productImages = corsetProducts.find(item => item.id === product.id)?.images || [];
+  const productImages2 = skirtProducts.find(item => item.id === product.id)?.images || [];
 
   return (
     <Container>

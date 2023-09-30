@@ -12,8 +12,8 @@ const skirtProducts = [
     id: 2,
     image: '/images/skirts/bov/1.png',
     price: 880,
-    description: 'Black brocade',
-    images: skirtGallery.find(item => item.id === 1).images,
+    description: 'Birth of Venus',
+    images: skirtGallery.find(item => item.id === 2).images,
   },
 ];
 
