@@ -19,6 +19,23 @@ const skirtGallery = [
       '/images/skirts/bov/9.png',
     ]
   },
+  {
+    id: 'S3',
+    images: [
+      '/images/skirts/sn/1.png',
+      '/images/skirts/sn/2.png',
+      '/images/skirts/sn/3.png',
+      '/images/skirts/sn/4.png',
+    ]
+  },
+  {
+    id: 'S4',
+    images: [
+      '/images/skirts/ab/1.png',
+      '/images/skirts/ab/2.png',
+      '/images/skirts/ab/3.png',
+    ]
+  },
 ];
 
 export default skirtGallery;

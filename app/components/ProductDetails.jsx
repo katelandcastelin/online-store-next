@@ -1,5 +1,5 @@
 'use client';
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import Accordion from './Accordion';
 import ProductGallery from './ProductGallery';
@@ -42,8 +42,11 @@ const Price = styled.p`
 
 export default function ProductDetails({ product }) {
 
+  const [selectedImage, setSelectedImage] = useState(product.image);
+
   useEffect(() => {
     window.scrollTo(0, 0);
+    setSelectedImage(product.image);
   }, [product]);
 
   const productImages = corsetProducts.find(item => item.id === product.id)?.images || [];
@@ -53,9 +56,9 @@ export default function ProductDetails({ product }) {
 
   return (
     <Container>
-      <ProductGallery images={allProductImages} />
+      <ProductGallery images={allProductImages} selectedImage={selectedImage} setSelectedImage={setSelectedImage} />
       <ImageContainer>
-        <img src={product.image} />
+        <img src={selectedImage} />
       </ImageContainer>
       <ProductInfoContainer>
         <Description>{product.description}</Description>
