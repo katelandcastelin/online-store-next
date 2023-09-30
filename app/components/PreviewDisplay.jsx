@@ -72,13 +72,13 @@ export default function PreviewDisplay() {
   return (
     <Container>
       <SmallBlockContainer>
+        <DisplayBlock href='/corsets'>
+          <p>Corsets</p>
+          <img src='/images/home-display/toile.png' />
+        </DisplayBlock>
         <DisplayBlock href="/skirts">
           <p>Skirts</p>
           <img src='/images/home-display/figure-skirt.png' />
-        </DisplayBlock>
-        <DisplayBlock href='/corsets'>
-          <p>Latest Collection</p>
-          <img src='/images/home-display/toile.png' />
         </DisplayBlock>
       </SmallBlockContainer>
       <WideBlockContainer>

@@ -8,6 +8,12 @@ const Container = styled.div`
   margin-right: 10px;
 `;
 
+const ThumbnailList = styled(ImageList)`
+  max-height: 100%;
+  height: auto;
+  width: 150px;
+`;
+
 const ImageThumbnail = styled(ImageListItem)`
   cursor: pointer;
 
@@ -21,7 +27,7 @@ const ImageThumbnail = styled(ImageListItem)`
 export default function ProductGallery({ images, setSelectedImage }) {
   return (
     <Container>
-      <ImageList sx={{ width: 150, height: '100%' }} cols={1} rowHeight={164}>
+      <ThumbnailList cols={1} rowHeight={164}>
         {images.map((image, index) => (
           <ImageThumbnail key={index} onClick={() => setSelectedImage(image)}>
             <img
@@ -32,7 +38,7 @@ export default function ProductGallery({ images, setSelectedImage }) {
             />
           </ImageThumbnail>
         ))}
-      </ImageList>
+      </ThumbnailList>
     </Container>
   )
 }
