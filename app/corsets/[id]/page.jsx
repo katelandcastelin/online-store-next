@@ -4,7 +4,7 @@ import ProductDetails from '../../components/ProductDetails';
 import corsetProducts from '../corsetsProducts-data/corsetsProducts';
 
 export default function CorsetDetailPage({ params }) {
-  let product = corsetProducts.find((entry) => entry.id === Number(params.id));
+  let product = corsetProducts.find((entry) => entry.id === String(params.id));
 
   return (
     <div>

@@ -1,12 +1,12 @@
 const skirtGallery = [
   {
-    id: 1,
+    id: 'S1',
     images: [
       '/images/skirts/black-brocade/1.png',
     ]
   },
   {
-    id: 2,
+    id: 'S2',
     images: [
       '/images/skirts/bov/1.png',
       '/images/skirts/bov/2.png',

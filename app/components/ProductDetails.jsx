@@ -49,9 +49,11 @@ export default function ProductDetails({ product }) {
   const productImages = corsetProducts.find(item => item.id === product.id)?.images || [];
   const productImages2 = skirtProducts.find(item => item.id === product.id)?.images || [];
 
+  const allProductImages = productImages.concat(productImages2);
+
   return (
     <Container>
-      <ProductGallery images={productImages} />
+      <ProductGallery images={allProductImages} />
       <ImageContainer>
         <img src={product.image} />
       </ImageContainer>

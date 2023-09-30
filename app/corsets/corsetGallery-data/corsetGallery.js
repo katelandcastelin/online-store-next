@@ -1,6 +1,6 @@
 const corsetGallery = [
   {
-    id: 1,
+    id: 'C1',
     images: [
       '/images/corsets/botanical-fl/1.png',
       '/images/corsets/botanical-fl/2.png',
@@ -10,7 +10,7 @@ const corsetGallery = [
     ]
   },
   {
-    id: 2,
+    id: 'C2',
     images: [
       '/images/corsets/toile-ub/1.jpeg',
       '/images/corsets/toile-ub/2.jpeg',
@@ -21,7 +21,7 @@ const corsetGallery = [
     ]
   },
   {
-    id: 3,
+    id: 'C3',
     images: [
       '/images/corsets/three-graces/1.jpg',
       '/images/corsets/three-graces/2.png',
@@ -31,7 +31,7 @@ const corsetGallery = [
     ]
   },
   {
-    id: 4,
+    id: 'C4',
     images: [
       '/images/corsets/pot-cat/1.jpg',
       '/images/corsets/pot-cat/2.jpg',
@@ -41,14 +41,14 @@ const corsetGallery = [
     ]
   },
   {
-    id: 5,
+    id: 'C5',
     images: [
       '/images/corsets/sn-ub/1.jpg',
       '/images/corsets/sn-ub/2.jpg',
     ]
   },
   {
-    id: 6,
+    id: 'C6',
     images: [
       '/images/corsets/tapestry/1.jpeg',
       '/images/corsets/tapestry/2.jpeg',
@@ -60,7 +60,7 @@ const corsetGallery = [
     ]
   },
   {
-    id: 7,
+    id: 'C7',
     images: [
       '/images/corsets/chain-ub/1.jpg',
       '/images/corsets/chain-ub/2.jpg',
@@ -69,7 +69,7 @@ const corsetGallery = [
     ]
   },
   {
-    id: 8,
+    id: 'C8',
     images: [
       '/images/corsets/bov-strapless/1.jpg',
       '/images/corsets/bov-strapless/2.jpg',
@@ -77,7 +77,7 @@ const corsetGallery = [
     ]
   },
   {
-    id: 9,
+    id: 'C9',
     images: [
       '/images/corsets/coa/1.png',
       '/images/corsets/coa/2.png',
@@ -87,7 +87,7 @@ const corsetGallery = [
     ]
   },
   {
-    id: 10,
+    id: 'C10',
     images: [
       '/images/corsets/beige-toile/1.png',
       '/images/corsets/beige-toile/2.png',
@@ -100,7 +100,7 @@ const corsetGallery = [
     ]
   },
   {
-    id: 11,
+    id: 'C11',
     images: [
       '/images/corsets/berry/1.png',
       '/images/corsets/berry/2.png',
@@ -111,7 +111,7 @@ const corsetGallery = [
     ]
   },
   {
-    id: 12,
+    id: 'C12',
     images: [
       '/images/corsets/sn-straps/1.png',
       '/images/corsets/sn-straps/2.png',
@@ -122,7 +122,7 @@ const corsetGallery = [
     ]
   },
   {
-    id: 13,
+    id: 'C13',
     images: [
       '/images/corsets/bov-straps/1.png',
       '/images/corsets/bov-straps/2.png',
@@ -132,7 +132,7 @@ const corsetGallery = [
     ]
   },
   {
-    id: 14,
+    id: 'C14',
     images: [
       '/images/corsets/prim-fb/1.png',
       '/images/corsets/prim-fb/2.png',
