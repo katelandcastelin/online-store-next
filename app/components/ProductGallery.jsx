@@ -8,19 +8,29 @@ const Container = styled.div`
   margin-right: 10px;
 `;
 
+const ImageThumbnail = styled(ImageListItem)`
+  cursor: pointer;
+
+  img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+  }
+`;
+
 export default function ProductGallery({ images, setSelectedImage }) {
   return (
     <Container>
       <ImageList sx={{ width: 150, height: '100%' }} cols={1} rowHeight={164}>
         {images.map((image, index) => (
-          <ImageListItem key={index} onClick={() => setSelectedImage(image)}>
+          <ImageThumbnail key={index} onClick={() => setSelectedImage(image)}>
             <img
               srcSet={image}
               src={image}
               alt={index}
               loading="lazy"
             />
-          </ImageListItem>
+          </ImageThumbnail>
         ))}
       </ImageList>
     </Container>
