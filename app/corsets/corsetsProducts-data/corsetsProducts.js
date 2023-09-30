@@ -1,4 +1,4 @@
-import corsetGallery from "../corsetItemGallery-data/corsetGallery-data";
+import corsetGallery from "../corsetGallery-data/corsetGallery";
 
 const corsetProducts = [
   {
@@ -66,14 +66,14 @@ const corsetProducts = [
   },
   {
     id: 10,
-    image: '/images/corsets/beige-toile/beige1.png',
+    image: '/images/corsets/beige-toile/1.png',
     price: 1050,
     description: 'Toile de Jouy',
     images: corsetGallery.find(item => item.id === 10).images,
   },
   {
     id: 11,
-    image: '/images/corsets/berry/berry1.png',
+    image: '/images/corsets/berry/1.png',
     price: 1050,
     description: 'Berries',
     images: corsetGallery.find(item => item.id === 11).images,
