@@ -6,6 +6,18 @@
   min-height: 100vh;
 }
 
+@media (max-width: 1120px) {
+  .main {
+    padding: 4rem 6rem;
+  }
+}
+
+@media (max-width: 950px) {
+  .main {
+    padding: 4rem 3rem;
+  }
+}
+
 .main h1 {
   color: #777777;
 }
@@ -91,7 +103,13 @@
   }
 }
 
-@media (min-width: 701px) and (max-width: 1120px) {
+@media (max-width: 1120px) {
+  .grid {
+    grid-template-columns: repeat(2, 50%);
+  }
+}
+
+@media (max-width: 700px) {
   .grid {
     grid-template-columns: repeat(1, 100%);
   }

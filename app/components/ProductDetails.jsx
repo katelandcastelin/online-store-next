@@ -45,7 +45,7 @@ export default function ProductDetails({ product }) {
   const [selectedImage, setSelectedImage] = useState(product.image);
 
   useEffect(() => {
-    window.scrollTo(0, 0);
+    window.scrollTo(0, 180);
     setSelectedImage(product.image);
   }, [product]);
 
