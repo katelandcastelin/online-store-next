@@ -1,6 +1,6 @@
 const ArtworkImages = [
   {
-    id: 'AlmondBlossoms',
+    id: '/images/artworks/almond-blossoms.jpeg',
     title: 'Almond Blossoms',
     artist: 'Vincent Van Gogh',
     year: '1890',
@@ -28,7 +28,7 @@ const ArtworkImages = [
     ],
   },
   {
-    id: 'CreationOfAdam',
+    id: '/images/artworks/creation-of-adam.jpeg',
     title: 'The Creation of Adam',
     artist: 'Michelangelo',
     year: '1508 - 1512',
@@ -44,7 +44,7 @@ const ArtworkImages = [
     ],
   },
   {
-    id: 'LuncheonOfTheBoatingParty',
+    id: '/images/artworks/luncheon-of-the-boating-party.jpeg',
     title: 'Luncheon of the Boating Party',
     artist: 'Pierre-Auguste Renoir',
     year: '1881',
@@ -56,7 +56,7 @@ const ArtworkImages = [
     ],
   },
   {
-    id: 'GirlWithAPearlEarring',
+    id: '/images/artworks/girl-with-a-pearl-earring.jpeg',
     title: 'Girl with a Pearl Earring',
     artist: 'Johannes Vermeer',
     year: '1665',
@@ -68,7 +68,7 @@ const ArtworkImages = [
     ],
   },
   {
-    id: 'Primavera',
+    id: '/images/artworks/primavera.jpeg',
     title: 'Primavera',
     artist: 'Sandro Botticelli',
     year: '1477 - 1482',
@@ -88,7 +88,7 @@ const ArtworkImages = [
     ],
   },
   {
-    id: 'StarryNight',
+    id: '/images/artworks/starry-night.jpeg',
     title: 'The Starry Night',
     artist: 'Vincent Van Gogh',
     year: 'June 1889',
@@ -108,7 +108,7 @@ const ArtworkImages = [
     ],
   },
   {
-    id: 'TheKiss',
+    id: '/images/artworks/the-kiss.jpeg',
     title: 'The Kiss',
     artist: 'Gustav Klimt',
     year: '1907 - 1908',
@@ -120,7 +120,7 @@ const ArtworkImages = [
     ],
   },
   {
-    id: 'WheatfieldWithCrows',
+    id: '/images/artworks/wheatfield-with-crows.jpeg',
     title: 'Wheatfield With Crows',
     artist: 'Vincent Van Gogh',
     year: 'July 1890',
@@ -136,7 +136,7 @@ const ArtworkImages = [
     ],
   },
   {
-    id: 'Mary',
+    id: '/images/artworks/mary.jpeg',
     title: 'The Ghent Altarpiece: Virgin Mary',
     artist: 'Jan van Eyck',
     year: '1432',
@@ -148,7 +148,7 @@ const ArtworkImages = [
     ],
   },
   {
-    id: 'BirthOfVenus',
+    id: '/images/artworks/birth-of-venus.jpeg',
     title: 'The Birth of Venus',
     artist: 'Sandro Botticelli',
     year: '1484 - 1486',
@@ -168,7 +168,7 @@ const ArtworkImages = [
     ],
   },
   {
-    id: 'LibertyLeadingThePeople',
+    id: '/images/artworks/liberty-leading-the-people.jpg',
     title: 'Liberty Leading the People',
     artist: 'Eugène Delacroix',
     year: '1830',
@@ -188,7 +188,7 @@ const ArtworkImages = [
     ],
   },
   {
-    id: 'MonaLisa',
+    id: '/images/artworks/mona-lisa.jpeg',
     title: 'Mona Lisa',
     artist: 'Leonardo da Vinci',
     year: '1503 - 1506',

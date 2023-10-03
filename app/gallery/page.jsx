@@ -2,8 +2,6 @@
 import { React, useState } from 'react';
 import styles from './galleryPage.module.css';
 import ArtworkImages from './galleryArtworks-data/galleryArtworks';
-// import { ArtworkImages } from '../utils/data';
-// import GalleryCorsets from '../components/GalleryCorsets';
 
 export default function Gallery() {
   const [selectedArtwork, setSelectedArtwork] = useState(null);
@@ -32,15 +30,18 @@ export default function Gallery() {
   ))
 
   return (
-    <div className={styles.galleryContainer}>
-      {artworks}
+    <div className={styles.main}>
+      <h1>Browse by artwork</h1>
+      <div className={styles.galleryContainer}>
+        {artworks}
 
-      {selectedArtwork && (
-        <div className={styles.fullScreenContainer}>
-          <button className={styles.closeButton} onClick={handleCloseClick}>X</button>
-          <GalleryCorsets selectedArtwork={selectedArtwork}/>
-        </div>
-      )}
+        {selectedArtwork && (
+          <div className={styles.fullScreenContainer}>
+            <button className={styles.closeButton} onClick={handleCloseClick}>X</button>
+            {/* <GalleryCorsets selectedArtwork={selectedArtwork}/> */}
+          </div>
+        )}
+      </div>
     </div>
   );
 }
