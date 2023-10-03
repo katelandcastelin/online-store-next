@@ -24,12 +24,12 @@ const DisplayBlock = styled.a`
     z-index: 1;
     position: absolute;
     font-size: 25px;
-    color: #000;
+    color: #555;
     transition: color 0.3s ease-in-out, font-size 0.3s ease-in-out;;
   }
 
   :hover p {
-    color: #555;
+    color: #eaeaea;
     font-size: 24px;
   }
 
@@ -81,6 +81,12 @@ export default function PreviewDisplay() {
           <img src='/images/home-display/figure-skirt.png' />
         </DisplayBlock>
       </SmallBlockContainer>
+      <WideBlockContainer>
+        <WideDisplay href='/gallery'>
+          <p>Gallery</p>
+          <img src='' />
+        </WideDisplay>
+      </WideBlockContainer>
       <WideBlockContainer>
         <WideDisplay>
           <p>Workspace</p>
