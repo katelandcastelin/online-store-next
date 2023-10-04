@@ -6,25 +6,17 @@ const ArtworkImages = [
     year: '1890',
     corsets: [
       {
-        image: 'AB1',
-        description: 'Almond Blossoms on a cropped corset with adjustable straps at the back.',
+        image: '/images/artworks/almond-blossoms/1.jpeg',
+        description: 'description',
       },
       {
-        image: 'AB2',
-        description: 'Full bust Almond Blossoms with plain side panels.',
+        image: '/images/artworks/almond-blossoms/2.jpg',
+        description: 'empty',
       },
       {
-        image: 'AB3',
-        description: 'Ribbon details and detatchable ribbon ties.',
+        image: '/images/artworks/almond-blossoms/3.jpg',
+        description: '',
       },
-      {
-        image: 'AB4',
-        description: 'Ribbon ties on a cropped Almond Blossoms corset.',
-      },
-      {
-        image: 'AB5',
-        description: 'Cropped Almond Blossoms corset with detatchable straps.',
-      }
     ],
   },
   {
