@@ -1,6 +1,9 @@
 'use client';
 import React from 'react';
 import styled from 'styled-components';
+import { Assistant } from 'next/font/google';
+
+const assistant = Assistant({subsets: ['latin']});
 
 const Container = styled.div`
   max-height: 100%;
@@ -11,33 +14,26 @@ const Container = styled.div`
 `;
 
 const ListBlock = styled.div`
+  background-color: #fff;
+  min-height: 93vh;
   width: 80%;
   height: 100%;
   padding: 20px;
-  margin-top: 40px;
-  background-color: #ffffff;
-`;
-
-const ImagesContainer = styled.div`
-  width: 80%;
-  height: 100%;
-  padding: 20px;
-  margin-top: 40px;
-  background-color: #ffffff;
+  margin-top: 20px;
+  margin-bottom: 20px;
 `;
 
 const Title = styled.h2`
-  font-size: xx-large;
   display: flex;
   justify-content: center;
+  padding-bottom: 19px;
   letter-spacing: 0.1em;
-  margin: 20px 0 40px 0;
-`;
-
-const Layout = styled.div`
-  display: flex;
-  align-items: center;
-  margin: 50px;
+  z-index: 1;
+  font-size: 55px;
+  letter-spacing: 3px;
+  font-weight: 200;
+  color: #000;
+  text-transform: uppercase;
 `;
 
 const CorsetImage = styled.img`
@@ -49,19 +45,26 @@ const CorsetImage = styled.img`
   border-top-color: #ccb;
 `;
 
+const Description = styled.p`
+  text-align: left;
+  font-size: large;
+  margin-left: 40px;
+  font-weight: 300;
+`;
+
 export default function GalleryPieces({ selectedArtwork }) {
   return (
     <Container>
       <ListBlock>
-        <Title>{selectedArtwork.title}</Title>
-        <ImagesContainer>
+        <Title className={assistant.className}>{selectedArtwork.title}</Title>
+        <div>
           {selectedArtwork.corsets.map((corset, index) => (
-            <Layout key={index}>
+            <div key={index}>
               <CorsetImage src={corset.image} alt={corset.description} />
-              <p>{corset.description}</p>
-            </Layout>
+              {/* <Description  className={assistant.className}>{corset.description}</Description> */}
+            </div>
           ))}
-        </ImagesContainer>
+        </div>
       </ListBlock>
     </Container>
   )
