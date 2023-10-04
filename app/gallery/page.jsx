@@ -2,6 +2,8 @@
 import { React, useState } from 'react';
 import styles from './galleryPage.module.css';
 import ArtworkImages from './galleryArtworks-data/galleryArtworks';
+import CloseIcon from '@mui/icons-material/Close';
+import GalleryPieces from '../components/GalleryPieces';
 
 export default function Gallery() {
   const [selectedArtwork, setSelectedArtwork] = useState(null);
@@ -37,8 +39,10 @@ export default function Gallery() {
 
         {selectedArtwork && (
           <div className={styles.fullScreenContainer}>
-            <button className={styles.closeButton} onClick={handleCloseClick}>X</button>
-            {/* <GalleryCorsets selectedArtwork={selectedArtwork}/> */}
+            <button className={styles.closeButton} onClick={handleCloseClick}>
+              <CloseIcon />
+            </button>
+            <GalleryPieces selectedArtwork={selectedArtwork} />
           </div>
         )}
       </div>
