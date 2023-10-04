@@ -1,6 +1,9 @@
 'use client';
 import React from 'react';
 import styled from 'styled-components';
+import { Assistant } from 'next/font/google';
+
+const assistant = Assistant({subsets: ['latin']});
 
 const Container = styled.div`
   display: flex;
@@ -23,21 +26,25 @@ const DisplayBlock = styled.a`
   p {
     z-index: 1;
     position: absolute;
-    font-size: 25px;
-    color: #555;
-    transition: color 0.3s ease-in-out, font-size 0.3s ease-in-out;;
+    font-size: 55px;
+    letter-spacing: 3px;
+    font-weight: 200;
+    color: #efefef;
+    text-shadow: 2px 2px 8px #000;
+    transition: color 0.3s ease-in-out, font-size 0.3s ease-in-out;
+    text-transform: uppercase;
+
   }
 
   :hover p {
-    color: #eaeaea;
-    font-size: 24px;
+    font-size: 52px;
   }
 
   img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    filter: grayscale(1);
+    filter: grayscale(0.8);
     transition: filter 0.3s ease-in-out;
   }
 
@@ -70,7 +77,7 @@ const WideBlockContainer = styled.div`
 
 export default function PreviewDisplay() {
   return (
-    <Container>
+    <Container className={assistant.className}>
       <SmallBlockContainer>
         <DisplayBlock href='/corsets'>
           <p>Corsets</p>
@@ -84,7 +91,7 @@ export default function PreviewDisplay() {
       <WideBlockContainer>
         <WideDisplay href='/gallery'>
           <p>Gallery</p>
-          <img src='' />
+          <img src='/images/artworks/creation-of-adam.jpeg' />
         </WideDisplay>
       </WideBlockContainer>
       <WideBlockContainer>
