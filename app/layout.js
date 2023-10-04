@@ -3,7 +3,7 @@ import { Inter } from 'next/font/google';
 import Header from './components/Header';
 import StyledComponentsRegistry from './lib/registry';
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ['latin'] });
 
 export const metadata = {
   title: 'Corsets',
