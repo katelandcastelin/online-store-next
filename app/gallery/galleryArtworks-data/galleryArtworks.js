@@ -7,11 +7,23 @@ const ArtworkImages = [
     corsets: [
       {
         image: '/images/artworks/almond-blossoms/1.jpeg',
-        description: 'description',
+        description: '',
+      },
+      {
+        image: '/images/artworks/almond-blossoms/1-1.jpeg',
+        description: '',
+      },
+      {
+        image: '/images/artworks/almond-blossoms/1-2.jpeg',
+        description: '',
+      },
+      {
+        image: '/images/artworks/almond-blossoms/1-3.jpeg',
+        description: '',
       },
       {
         image: '/images/artworks/almond-blossoms/2.jpg',
-        description: 'empty',
+        description: '',
       },
       {
         image: '/images/artworks/almond-blossoms/3.jpg',
@@ -26,12 +38,24 @@ const ArtworkImages = [
     year: '1508 - 1512',
     corsets: [
       {
-        image: 'CreationOfAdam1',
-        description: 'Creation of Adam',
+        image: '/images/artworks/creation-of-adam/1.png',
+        description: '',
       },
       {
-        image: 'COA1',
-        description: 'Detatchable straps.',
+        image: '/images/artworks/creation-of-adam/1-1.png',
+        description: '',
+      },
+      {
+        image: '/images/artworks/creation-of-adam/2.png',
+        description: '',
+      },
+      {
+        image: '/images/artworks/creation-of-adam/2-1.png',
+        description: '',
+      },
+      {
+        image: '/images/artworks/creation-of-adam/2-2.png',
+        description: '',
       },
     ],
   },
@@ -42,8 +66,8 @@ const ArtworkImages = [
     year: '1881',
     corsets: [
       {
-        image: 'Luncheon1',
-        description: 'Photographed against embroidery done by my grandmother when she was visting South Africa from Czech Republic. The figure  with the dog I placed on the centre panel was a seamstress.',
+        image: '',
+        description: '',
       },
     ],
   },
@@ -54,8 +78,8 @@ const ArtworkImages = [
     year: '1665',
     corsets: [
       {
-        image: 'GWAPE',
-        description: 'Girl with a Pearl Earring.',
+        image: '',
+        description: '',
       },
     ],
   },
@@ -66,17 +90,21 @@ const ArtworkImages = [
     year: '1477 - 1482',
     corsets: [
       {
-        image: 'Primavera1',
-        description: 'Primavera with Venus in the centre.',
+        image: '/images/artworks/primavera/1.png',
+        description: '',
       },
       {
-        image: 'ThreeGraces1',
-        description: 'The Three Graces in Primavera.',
+        image: '/images/artworks/primavera/2.png',
+        description: '',
       },
       {
-        image: 'Flora',
-        description: "Flora, Clora, Zephyr."
-      }
+        image: '/images/artworks/primavera/2-1.png',
+        description: '',
+      },
+      {
+        image: '/images/artworks/primavera/2-2.png',
+        description: '',
+      },
     ],
   },
   {
@@ -86,16 +114,28 @@ const ArtworkImages = [
     year: 'June 1889',
     corsets: [
       {
-        image: 'SN1',
-        description: 'Starry Night with organza ribbons that looks like the magical night sky.',
+        image: '/images/artworks/starry-night/1.jpg',
+        description: '',
       },
       {
-        image: 'SN2',
-        description: 'Ribbon ties.',
+        image: '/images/artworks/starry-night/1-1.jpg',
+        description: '',
       },
       {
-        image: 'SN3',
-        description: 'Full bust with plain side panels.',
+        image: '/images/artworks/starry-night/2.png',
+        description: '',
+      },
+      {
+        image: '/images/artworks/starry-night/2-1.png',
+        description: '',
+      },
+      {
+        image: '/images/artworks/starry-night/2-2.png',
+        description: '',
+      },
+      {
+        image: '/images/artworks/starry-night/2-3.png',
+        description: '',
       },
     ],
   },
@@ -106,8 +146,8 @@ const ArtworkImages = [
     year: '1907 - 1908',
     corsets: [
       {
-        image: 'TheKiss1',
-        description: 'The Kiss on a full bust corset.',
+        image: '',
+        description: '',
       },
     ],
   },
@@ -118,11 +158,7 @@ const ArtworkImages = [
     year: 'July 1890',
     corsets: [
       {
-        image: 'Wheatfield1',
-        description: 'Wheatfield with crows with ribbon ties.',
-      },
-      {
-        image: 'Wheatfield2',
+        image: '',
         description: '',
       },
     ],
@@ -134,8 +170,8 @@ const ArtworkImages = [
     year: '1432',
     corsets: [
       {
-        image: 'Mary1',
-        description: 'Mary done on an old fashioned inpired shape.',
+        image: '',
+        description: '',
       },
     ],
   },
@@ -146,15 +182,23 @@ const ArtworkImages = [
     year: '1484 - 1486',
     corsets: [
       {
-        image: 'BOV1',
+        image: '/images/artworks/birth-of-venus/1.jpg',
         description: '',
       },
       {
-        image: 'BOV2',
+        image: '/images/artworks/birth-of-venus/1-1.jpg',
         description: '',
       },
       {
-        image: 'BOV3',
+        image: '/images/artworks/birth-of-venus/1-2.jpg',
+        description: '',
+      },
+      {
+        image: '/images/artworks/birth-of-venus/2.png',
+        description: '',
+      },
+      {
+        image: '/images/artworks/birth-of-venus/2-1.png',
         description: '',
       },
     ],
@@ -166,15 +210,7 @@ const ArtworkImages = [
     year: '1830',
     corsets: [
       {
-        image: 'Liberty1',
-        description: '',
-      },
-      {
-        image: 'Liberty2',
-        description: '',
-      },
-      {
-        image: 'Liberty3',
+        image: '',
         description: '',
       },
     ],
@@ -186,7 +222,7 @@ const ArtworkImages = [
     year: '1503 - 1506',
     corsets: [
       {
-        image: 'MonaLisa1',
+        image: '',
         description: '',
       },
     ],
