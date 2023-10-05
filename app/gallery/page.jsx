@@ -4,6 +4,9 @@ import styles from './galleryPage.module.css';
 import ArtworkImages from './galleryArtworks-data/galleryArtworks';
 import CloseIcon from '@mui/icons-material/Close';
 import GalleryPieces from '../components/GalleryPieces';
+import { Tangerine } from 'next/font/google';
+
+const tangerine = Tangerine({ subsets: ['latin'], weight: ['700'] });
 
 export default function Gallery() {
   const [selectedArtwork, setSelectedArtwork] = useState(null);
@@ -33,7 +36,7 @@ export default function Gallery() {
 
   return (
     <div className={styles.main}>
-      <h1>Browse by artwork</h1>
+      <h1 className={tangerine.className}>Browse by artwork</h1>
       <div className={styles.galleryContainer}>
         {artworks}
 

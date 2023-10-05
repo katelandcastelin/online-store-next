@@ -2,11 +2,14 @@ import React from 'react';
 import Link from 'next/link';
 import styles from './skirtsPage.module.css';
 import skirtProducts from './skirtsProducts-data/skirtsProducts';
+import { Tangerine } from 'next/font/google';
+
+const tangerine = Tangerine({ subsets: ['latin'], weight: ['700'] });
 
 export default function SkirtsPage() {
   return (
     <div className={styles.main}>
-      <h1>Shop Skirts</h1>
+      <h1 className={tangerine.className}>Shop Skirts</h1>
       <div className={styles.grid}>
         {skirtProducts.map((item) => (
           <Link key={item.id} href={`/skirts/${item.id}`} className={styles.card}>
