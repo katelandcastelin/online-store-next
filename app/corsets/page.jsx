@@ -2,6 +2,9 @@ import React from 'react';
 import Link from 'next/link';
 import styles from './corsetsPage.module.css';
 import corsetProducts from './corsetsProducts-data/corsetsProducts';
+import { Tangerine } from 'next/font/google';
+
+const tangerine = Tangerine({ subsets: ['latin'], weight: ['700'] });
 
 export default function CorsetsPage() {
   const corsets = corsetProducts.reverse();
@@ -9,7 +12,7 @@ export default function CorsetsPage() {
     <div className={styles.main}>
       <div className={styles.headerContainer}>
         <img className={styles.bottomBorder} src='/bottom-border.png' />
-        <h1>Shop Corsets</h1>
+        <h1 className={tangerine.className}>Shop Corsets</h1>
       </div>
       <div className={styles.grid}>
         {corsets.map((item) => (
