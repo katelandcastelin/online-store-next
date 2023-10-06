@@ -24,6 +24,7 @@ const ImageGalleryContainer = styled.div`
 
   @media (max-width: 1000px) {
     display: flex;
+    margin-bottom: 40px;
     height: 100vh;
   }
 `;
@@ -37,6 +38,7 @@ const ImageContainer = styled.div`
 
   @media (max-width: 1000px) {
     width: 100%;
+    height: 90vh;
   }
 
   img {
