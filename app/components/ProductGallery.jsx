@@ -9,6 +9,10 @@ const Container = styled.div`
   @media (max-width: 1040px) {
     height: 90vh;
   }
+
+  @media (max-width: 780px) {
+    display: none;
+  }
 `;
 
 const ThumbnailList = styled(ImageList)`
@@ -27,21 +31,34 @@ const ImageThumbnail = styled(ImageListItem)`
   }
 `;
 
+const HorizontalThumbnailList = styled.div`
+  @media (max-width: 780px) {
+    border: 1px solid #000;
+    height: 150px;
+    width: 150px;
+  }
+`;
+
 export default function ProductGallery({ images, setSelectedImage }) {
   return (
-    <Container>
-      <ThumbnailList cols={1} rowHeight={164}>
-        {images.map((image, index) => (
-          <ImageThumbnail key={index} onClick={() => setSelectedImage(image)}>
-            <img
-              srcSet={image}
-              src={image}
-              alt={index}
-              loading="lazy"
-            />
-          </ImageThumbnail>
-        ))}
-      </ThumbnailList>
-    </Container>
+    <div>
+      <Container>
+        <ThumbnailList cols={1} rowHeight={164}>
+          {images.map((image, index) => (
+            <ImageThumbnail key={index} onClick={() => setSelectedImage(image)}>
+              <img
+                srcSet={image}
+                src={image}
+                alt={index}
+                loading="lazy"
+              />
+            </ImageThumbnail>
+          ))}
+        </ThumbnailList>
+      </Container>
+      <HorizontalThumbnailList>
+
+      </HorizontalThumbnailList>
+    </div>
   )
 }

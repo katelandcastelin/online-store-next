@@ -26,6 +26,10 @@ const ImageGalleryContainer = styled.div`
     display: flex;
     margin-bottom: 40px;
   }
+
+  @media (max-width: 780px) {
+    display: contents;
+  }
 `;
 
 const ImageContainer = styled.div`
@@ -38,6 +42,11 @@ const ImageContainer = styled.div`
   @media (max-width: 1040px) {
     width: 100%;
     height: 90vh;
+  }
+
+  @media (max-width: 780px) {
+    height: 60vh;
+    margin: 0 0 10px 0;
   }
 
   img {
