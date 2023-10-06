@@ -12,7 +12,7 @@ const Container = styled.div`
   display: flex;
   justify-content: center;
 
-  @media (max-width: 1000px) {
+  @media (max-width: 1040px) {
     flex-direction: column;
     padding: 3rem;
     height: 100%;
@@ -22,10 +22,9 @@ const Container = styled.div`
 const ImageGalleryContainer = styled.div`
   display: contents;
 
-  @media (max-width: 1000px) {
+  @media (max-width: 1040px) {
     display: flex;
     margin-bottom: 40px;
-    height: 100vh;
   }
 `;
 
@@ -36,7 +35,7 @@ const ImageContainer = styled.div`
   width: 50%;
   margin: 0 10px;
 
-  @media (max-width: 1000px) {
+  @media (max-width: 1040px) {
     width: 100%;
     height: 90vh;
   }
@@ -51,7 +50,7 @@ const ProductInfoContainer = styled.div`
   height: 90%;
   width: 30%;
 
-  @media (max-width: 1000px) {
+  @media (max-width: 1040px) {
     width: 100%;
     padding: 0 10%;
   }

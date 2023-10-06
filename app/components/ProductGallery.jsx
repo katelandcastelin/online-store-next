@@ -5,6 +5,10 @@ import ImageListItem from '@mui/material/ImageListItem';
 
 const Container = styled.div`
   height: 90%;
+
+  @media (max-width: 1040px) {
+    height: 90vh;
+  }
 `;
 
 const ThumbnailList = styled(ImageList)`
