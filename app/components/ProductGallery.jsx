@@ -5,7 +5,6 @@ import ImageListItem from '@mui/material/ImageListItem';
 
 const Container = styled.div`
   height: 90%;
-  margin-right: 10px;
 `;
 
 const ThumbnailList = styled(ImageList)`
