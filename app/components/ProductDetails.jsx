@@ -11,6 +11,7 @@ const Container = styled.div`
   margin-top: 5%;
   display: flex;
   justify-content: center;
+  padding: 0 3rem;
 
   @media (max-width: 1040px) {
     flex-direction: column;
@@ -20,7 +21,9 @@ const Container = styled.div`
 `;
 
 const ImageGalleryContainer = styled.div`
-  display: contents;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
 
   @media (max-width: 1040px) {
     display: flex;
@@ -36,8 +39,10 @@ const ImageContainer = styled.div`
   display: flex;
   justify-content: center;
   height: 90%;
-  width: 50%;
+  max-width: 100%;
+  width: 700px;
   margin: 0 10px;
+  
 
   @media (max-width: 1040px) {
     width: 100%;
@@ -62,6 +67,10 @@ const ProductInfoContainer = styled.div`
   @media (max-width: 1040px) {
     width: 100%;
     padding: 0 10%;
+  }
+
+  @media (max-width: 780px) {
+    margin-top: 30px;
   }
 `;
 
@@ -92,10 +101,10 @@ export default function ProductDetails({ product }) {
   return (
     <Container>
       <ImageGalleryContainer>
-        <ProductGallery images={allProductImages} selectedImage={selectedImage} setSelectedImage={setSelectedImage} />
         <ImageContainer>
           <img src={selectedImage} />
         </ImageContainer>
+        <ProductGallery images={allProductImages} selectedImage={selectedImage} setSelectedImage={setSelectedImage} />
       </ImageGalleryContainer>
       <ProductInfoContainer>
         <Description>{product.description}</Description>

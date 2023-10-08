@@ -32,10 +32,27 @@ const ImageThumbnail = styled(ImageListItem)`
 `;
 
 const HorizontalThumbnailList = styled.div`
+  display: none;
+
   @media (max-width: 780px) {
-    border: 1px solid #000;
-    height: 150px;
-    width: 150px;
+    display: flex;
+    overflow-y: scroll;
+  }
+`;
+
+const HorizontalImageThumbnail = styled.div`
+  display: none;
+
+  @media (max-width: 780px) {
+    display: flex;
+    cursor: pointer;
+
+    img {
+      height: 150px;
+      width: 150px;
+      object-fit: cover;
+      margin: 0 3px;
+    }
   }
 `;
 
@@ -57,7 +74,16 @@ export default function ProductGallery({ images, setSelectedImage }) {
         </ThumbnailList>
       </Container>
       <HorizontalThumbnailList>
-
+        {images.map((image, index) => (
+          <HorizontalImageThumbnail key={index} onClick={() => setSelectedImage(image)}>
+            <img
+              srcSet={image}
+              src={image}
+              alt={index}
+              loading="lazy"
+            />
+          </HorizontalImageThumbnail>
+        ))}
       </HorizontalThumbnailList>
     </div>
   )
