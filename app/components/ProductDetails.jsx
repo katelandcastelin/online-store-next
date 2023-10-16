@@ -11,14 +11,63 @@ const Container = styled.div`
   margin-top: 5%;
   display: flex;
   justify-content: center;
+  padding: 0 3rem;
+
+  @media (max-width: 1040px) {
+    flex-direction: column;
+    padding: 3rem;
+    height: 100%;
+  }
+`;
+
+const ImageGalleryContainer = styled.div`
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+
+  @media (max-width: 1040px) {
+    display: flex;
+    margin-bottom: 40px;
+  }
+
+  @media (max-width: 780px) {
+    display: contents;
+  }
 `;
 
 const ImageContainer = styled.div`
   display: flex;
   justify-content: center;
   height: 90%;
-  width: 50%;
-  margin-bottom: 10px;
+  width: 100%;
+  width: 700px;
+  margin: 0 10px;
+
+  @media (max-width: 1290px) {
+    width: 650px;
+  }
+
+  @media (max-width: 1190px) {
+    width: 580px;
+  }
+
+  @media (max-width: 1140px) {
+    width: 530px;
+  }
+
+  @media (max-width: 1095px) {
+    width: 500px;
+  }
+
+  @media (max-width: 1040px) {
+    width: 100%;
+    height: 90vh;
+  }
+
+  @media (max-width: 780px) {
+    height: 60vh;
+    margin: 0 0 10px 0;
+  }
 
   img {
     width: 100%;
@@ -29,15 +78,25 @@ const ImageContainer = styled.div`
 const ProductInfoContainer = styled.div`
   height: 90%;
   width: 30%;
-  margin-left: 3%;
+
+  @media (max-width: 1040px) {
+    width: 100%;
+    padding: 0 10%;
+  }
+
+  @media (max-width: 780px) {
+    margin-top: 30px;
+  }
 `;
 
 const Description = styled.p`
   font-size: xx-large;
+  margin-left: 10px;
 `;
 
 const Price = styled.p`
   font-size: larger;
+  margin-left: 10px;
 `;
 
 export default function ProductDetails({ product }) {
@@ -56,10 +115,12 @@ export default function ProductDetails({ product }) {
 
   return (
     <Container>
-      <ProductGallery images={allProductImages} selectedImage={selectedImage} setSelectedImage={setSelectedImage} />
-      <ImageContainer>
-        <img src={selectedImage} />
-      </ImageContainer>
+      <ImageGalleryContainer>
+        <ImageContainer>
+          <img src={selectedImage} />
+        </ImageContainer>
+        <ProductGallery images={allProductImages} selectedImage={selectedImage} setSelectedImage={setSelectedImage} />
+      </ImageGalleryContainer>
       <ProductInfoContainer>
         <Description>{product.description}</Description>
         <br />

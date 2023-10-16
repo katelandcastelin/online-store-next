@@ -5,7 +5,14 @@ import ImageListItem from '@mui/material/ImageListItem';
 
 const Container = styled.div`
   height: 90%;
-  margin-right: 10px;
+
+  @media (max-width: 1040px) {
+    height: 90vh;
+  }
+
+  @media (max-width: 780px) {
+    display: none;
+  }
 `;
 
 const ThumbnailList = styled(ImageList)`
@@ -24,21 +31,60 @@ const ImageThumbnail = styled(ImageListItem)`
   }
 `;
 
+const HorizontalThumbnailList = styled.div`
+  display: none;
+
+  @media (max-width: 780px) {
+    display: flex;
+    overflow-y: scroll;
+  }
+`;
+
+const HorizontalImageThumbnail = styled.div`
+  display: none;
+
+  @media (max-width: 780px) {
+    display: flex;
+    cursor: pointer;
+
+    img {
+      height: 150px;
+      width: 150px;
+      object-fit: cover;
+      margin: 0 3px;
+    }
+  }
+`;
+
 export default function ProductGallery({ images, setSelectedImage }) {
   return (
-    <Container>
-      <ThumbnailList cols={1} rowHeight={164}>
+    <div>
+      <Container>
+        <ThumbnailList cols={1} rowHeight={164}>
+          {images.map((image, index) => (
+            <ImageThumbnail key={index} onClick={() => setSelectedImage(image)}>
+              <img
+                srcSet={image}
+                src={image}
+                alt={index}
+                loading="lazy"
+              />
+            </ImageThumbnail>
+          ))}
+        </ThumbnailList>
+      </Container>
+      <HorizontalThumbnailList>
         {images.map((image, index) => (
-          <ImageThumbnail key={index} onClick={() => setSelectedImage(image)}>
+          <HorizontalImageThumbnail key={index} onClick={() => setSelectedImage(image)}>
             <img
               srcSet={image}
               src={image}
               alt={index}
               loading="lazy"
             />
-          </ImageThumbnail>
+          </HorizontalImageThumbnail>
         ))}
-      </ThumbnailList>
-    </Container>
+      </HorizontalThumbnailList>
+    </div>
   )
 }

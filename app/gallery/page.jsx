@@ -1,5 +1,5 @@
 'use client';
-import { React, useState } from 'react';
+import { React, useState, useEffect } from 'react';
 import styles from './galleryPage.module.css';
 import ArtworkImages from './galleryArtworks-data/galleryArtworks';
 import CloseIcon from '@mui/icons-material/Close';
@@ -10,6 +10,12 @@ const tangerine = Tangerine({ subsets: ['latin'], weight: ['700'] });
 
 export default function Gallery() {
   const [selectedArtwork, setSelectedArtwork] = useState(null);
+
+  useEffect(() => {
+    if (selectedArtwork === null) {
+      window.scrollTo(0, 170);
+    }
+  }, [selectedArtwork]);
 
   const handleImageClick = (artworkId) => {
     setSelectedArtwork(artworkId);
