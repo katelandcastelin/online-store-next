@@ -39,10 +39,25 @@ const ImageContainer = styled.div`
   display: flex;
   justify-content: center;
   height: 90%;
-  max-width: 100%;
+  width: 100%;
   width: 700px;
   margin: 0 10px;
-  
+
+  @media (max-width: 1290px) {
+    width: 650px;
+  }
+
+  @media (max-width: 1190px) {
+    width: 580px;
+  }
+
+  @media (max-width: 1140px) {
+    width: 530px;
+  }
+
+  @media (max-width: 1095px) {
+    width: 500px;
+  }
 
   @media (max-width: 1040px) {
     width: 100%;
