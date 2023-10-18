@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import Accordion from './Accordion';
 import ProductGallery from './ProductGallery';
-import OptionSelect from './OptionSelect';
+import OptionSelect from './SizeSelect';
 import corsetProducts from '../corsets/corsetsProducts-data/corsetsProducts';
 import skirtProducts from '../skirts/skirtsProducts-data/skirtsProducts';
 
