@@ -34,7 +34,6 @@ export default function SizeSelect() {
           <SizeBlock>{size}</SizeBlock>
       ))}
       </SizeOptions>
-      <p>Something</p>
     </Container>
   )
 }

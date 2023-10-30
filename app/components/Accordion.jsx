@@ -5,6 +5,7 @@ import AccordionDetails from '@mui/material/AccordionDetails';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import SizeChart from './SizeChart';
 
 export default function ControlledAccordions() {
   const [expanded, setExpanded] = React.useState(false);
@@ -27,7 +28,7 @@ export default function ControlledAccordions() {
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-            Image rendered
+            <SizeChart />
           </Typography>
         </AccordionDetails>
       </Accordion>
