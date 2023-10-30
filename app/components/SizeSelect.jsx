@@ -15,6 +15,10 @@ const Container = styled.div`
   height: 20%;
 `;
 
+const SizeOptions = styled.div`
+  display: flex;
+`;
+
 const SizeBlock = styled.div`
   height: 50px;
   width: 60px;
@@ -25,11 +29,12 @@ export default function SizeSelect() {
 
   return (
     <Container>
+      <SizeOptions>
       {sizes.map((size) => (
-        <div>
           <SizeBlock>{size}</SizeBlock>
-        </div>
       ))}
+      </SizeOptions>
+      <p>Something</p>
     </Container>
   )
 }
