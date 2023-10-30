@@ -98,6 +98,7 @@ const Description = styled.p`
 const Price = styled.p`
   font-size: larger;
   margin-left: 10px;
+  color: #555;
 `;
 
 export default function ProductDetails({ product }) {
