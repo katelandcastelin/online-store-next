@@ -15,6 +15,23 @@ export default function ControlledAccordions() {
 
   return (
     <div>
+      <Accordion sx={{backgroundColor: 'transparent'}} expanded={expanded === 'panel2'} onChange={handleChange('panel2')}>
+        <AccordionSummary
+          expandIcon={<ExpandMoreIcon />}
+          aria-controls="panel2bh-content"
+          id="panel2bh-header"
+        >
+          <Typography sx={{ width: '33%', flexShrink: 0 }}>
+            Size Chart
+          </Typography>
+        </AccordionSummary>
+        <AccordionDetails>
+          <Typography>
+            Image rendered
+          </Typography>
+        </AccordionDetails>
+      </Accordion>
+
       <Accordion sx={{backgroundColor: 'transparent'}} square={true} expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
@@ -29,23 +46,6 @@ export default function ControlledAccordions() {
           <Typography>
             Remove ribbons before washing. Cold hand wash only. Hang to dry or lay on a ventilated surface.
             Keep out of direct sunlight. 
-          </Typography>
-        </AccordionDetails>
-      </Accordion>
-
-      <Accordion sx={{backgroundColor: 'transparent'}} expanded={expanded === 'panel2'} onChange={handleChange('panel2')}>
-        <AccordionSummary
-          expandIcon={<ExpandMoreIcon />}
-          aria-controls="panel2bh-content"
-          id="panel2bh-header"
-        >
-          <Typography sx={{ width: '33%', flexShrink: 0 }}>
-            Size Chart
-          </Typography>
-        </AccordionSummary>
-        <AccordionDetails>
-          <Typography>
-            Image rendered
           </Typography>
         </AccordionDetails>
       </Accordion>

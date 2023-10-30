@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import Accordion from './Accordion';
 import ProductGallery from './ProductGallery';
+import OptionSelect from './SizeSelect';
 import corsetProducts from '../corsets/corsetsProducts-data/corsetsProducts';
 import skirtProducts from '../skirts/skirtsProducts-data/skirtsProducts';
 
@@ -126,6 +127,7 @@ export default function ProductDetails({ product }) {
         <br />
         <Price>R {product.price}</Price>
         <br />
+        <OptionSelect />
         <Accordion />
       </ProductInfoContainer>
     </Container>
