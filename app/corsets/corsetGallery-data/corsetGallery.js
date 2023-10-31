@@ -142,6 +142,28 @@ const corsetGallery = [
       '/images/corsets/prim-fb/6.png',
       '/images/corsets/prim-fb/7.png',
     ]
+  },
+  {
+    id: 'C15',
+    images: [
+      '/images/corsets/mary-curve/1.png',
+      '/images/corsets/mary-curve/2.png',
+      '/images/corsets/mary-curve/3.png',
+      '/images/corsets/mary-curve/4.png',
+      '/images/corsets/mary-curve/5.png',
+      '/images/corsets/mary-curve/6.png',
+      '/images/corsets/mary-curve/7.png',
+      '/images/corsets/mary-curve/8.png',
+    ]
+  },
+  {
+    id: 'C16',
+    images: [
+      '/images/corsets/bov-curve/1.png',
+      '/images/corsets/bov-curve/2.png',
+      '/images/corsets/bov-curve/3.png',
+      '/images/corsets/bov-curve/4.png',
+    ]
   }
 ];
 

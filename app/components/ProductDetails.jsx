@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import Accordion from './Accordion';
 import ProductGallery from './ProductGallery';
-import OptionSelect from './SizeSelect';
+import SizeSelectCorset from './SizeSelectCorset';
 import corsetProducts from '../corsets/corsetsProducts-data/corsetsProducts';
 import skirtProducts from '../skirts/skirtsProducts-data/skirtsProducts';
 
@@ -97,7 +97,7 @@ const Description = styled.p`
 
 const Price = styled.p`
   font-size: larger;
-  margin-left: 10px;
+  margin-left: 20px;
   color: #555;
 `;
 
@@ -128,7 +128,7 @@ export default function ProductDetails({ product }) {
         <br />
         <Price>R {product.price}</Price>
         <br />
-        <OptionSelect />
+        <SizeSelectCorset />
         <Accordion />
       </ProductInfoContainer>
     </Container>

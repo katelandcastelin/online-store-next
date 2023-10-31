@@ -5,7 +5,7 @@ import AccordionDetails from '@mui/material/AccordionDetails';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import SizeChart from './SizeChart';
+import SizeChartCorset from './SizeChartCorset';
 
 export default function ControlledAccordions() {
   const [expanded, setExpanded] = React.useState(false);
@@ -28,7 +28,10 @@ export default function ControlledAccordions() {
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-            <SizeChart />
+            {/* corset size chart */}
+            <SizeChartCorset />
+            {/* underbust size chart */}
+            {/* skirt size chart */}
           </Typography>
         </AccordionDetails>
       </Accordion>

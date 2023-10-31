@@ -81,23 +81,37 @@ const corsetProducts = [
   {
     id: 'C12',
     image: '/images/corsets/sn-straps/1.png',
-    price: 1050,
+    price: 1080,
     description: 'Starry Night full bust',
     images: corsetGallery.find(item => item.id === 'C12').images,
   },
   {
     id: 'C13',
     image: '/images/corsets/bov-straps/1.png',
-    price: 1050,
+    price: 1080,
     description: 'Birth of Venus with straps full bust',
     images: corsetGallery.find(item => item.id === 'C13').images,
   },
   {
     id: 'C14',
     image: '/images/corsets/prim-fb/1.png',
-    price: 1050,
+    price: 1080,
     description: 'Primavera full bust',
     images: corsetGallery.find(item => item.id === 'C14').images,
+  },
+  {
+    id: 'C15',
+    image: '/images/corsets/mary-curve/1.png',
+    price: 1050,
+    description: 'Mary',
+    images: corsetGallery.find(item => item.id === 'C15').images,
+  },
+  {
+    id: 'C16',
+    image: '/images/corsets/bov-curve/1.png',
+    price: 1050,
+    description: 'Birth of Venus',
+    images: corsetGallery.find(item => item.id === 'C16').images,
   },
 ];
 
