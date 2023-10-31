@@ -6,6 +6,7 @@ import ProductGallery from './ProductGallery';
 import SizeSelectCorset from './SizeSelectCorset';
 import corsetProducts from '../corsets/corsetsProducts-data/corsetsProducts';
 import skirtProducts from '../skirts/skirtsProducts-data/skirtsProducts';
+import AddToCart from './AddToCart';
 
 const Container = styled.div`
   height: 100vh;
@@ -129,6 +130,7 @@ export default function ProductDetails({ product }) {
         <Price>R {product.price}</Price>
         <br />
         <SizeSelectCorset />
+        <AddToCart />
         <Accordion />
       </ProductInfoContainer>
     </Container>
