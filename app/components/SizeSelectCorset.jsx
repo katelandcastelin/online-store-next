@@ -17,7 +17,7 @@ const Container = styled.div`
 
 const SizeOptions = styled.div`
   display: flex;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 `;
 
 const SizeBlock = styled.div`
