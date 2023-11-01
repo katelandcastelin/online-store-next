@@ -22,11 +22,6 @@ const Container = styled.div`
     height: 100%;
   }
 
-  p {
-    margin-left: 10px;
-    margin-bottom: 20px;
-  }
-
   a {
     text-decoration: underline;
 
@@ -152,8 +147,8 @@ export default function ProductDetails({ product }) {
           <AddToCart />
           <AddToWishlist />
         </div>
-        <p>Item has been added to your cart. <a href=''>View cart.</a></p>
-        <p>Your wishlist has been updated. <a href='/wishlist'>View wishlist.</a></p>
+        <p style={{margin: '0 0 20px 10px'}}>Item has been added to your cart. <a href=''>View cart.</a></p>
+        <p style={{margin: '0 0 20px 10px'}}>Your wishlist has been updated. <a href='/wishlist'>View wishlist.</a></p>
         <Accordion />
       </ProductInfoContainer>
     </Container>
