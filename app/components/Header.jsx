@@ -123,7 +123,7 @@ export default function Header() {
         <a href="/wishlist">
           <img src="/heart.png" />
         </a>
-        <a href="">
+        <a href="/cart">
           <img src="/cart.png" />
         </a>
       </RightContainer>
