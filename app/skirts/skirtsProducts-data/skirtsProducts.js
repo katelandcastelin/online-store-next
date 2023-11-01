@@ -7,6 +7,7 @@ const skirtProducts = [
     price: 880,
     description: 'Black brocade',
     images: skirtGallery.find(item => item.id === 'S1').images,
+    category: 'skirt',
   },
   {
     id: 'S2',
@@ -14,6 +15,7 @@ const skirtProducts = [
     price: 880,
     description: 'Birth of Venus',
     images: skirtGallery.find(item => item.id === 'S2').images,
+    category: 'skirt',
   },
   {
     id: 'S3',
@@ -21,6 +23,7 @@ const skirtProducts = [
     price: 880,
     description: 'Starry Night',
     images: skirtGallery.find(item => item.id === 'S3').images,
+    category: 'skirt',
   },
   {
     id: 'S4',
@@ -28,6 +31,7 @@ const skirtProducts = [
     price: 880,
     description: 'Almond Blossoms',
     images: skirtGallery.find(item => item.id === 'S4').images,
+    category: 'skirt',
   },
 ];
 

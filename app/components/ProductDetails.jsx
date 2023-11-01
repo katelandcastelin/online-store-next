@@ -6,6 +6,8 @@ import ProductGallery from './ProductGallery';
 import SizeSelectCorset from './SizeSelectCorset';
 import corsetProducts from '../corsets/corsetsProducts-data/corsetsProducts';
 import skirtProducts from '../skirts/skirtsProducts-data/skirtsProducts';
+import AddToCart from './AddToCart';
+import AddToWishlist from './AddToWishlist';
 
 const Container = styled.div`
   height: 100vh;
@@ -18,6 +20,23 @@ const Container = styled.div`
     flex-direction: column;
     padding: 3rem;
     height: 100%;
+  }
+
+  p {
+    margin-left: 10px;
+    margin-bottom: 20px;
+  }
+
+  a {
+    text-decoration: underline;
+
+    :hover {
+      color: #5b5b5b;
+    }
+
+    :active {
+      color: #000;
+    }
   }
 `;
 
@@ -129,6 +148,12 @@ export default function ProductDetails({ product }) {
         <Price>R {product.price}</Price>
         <br />
         <SizeSelectCorset />
+        <div style={{display: 'flex'}}>
+          <AddToCart />
+          <AddToWishlist />
+        </div>
+        <p>Item has been added to your cart. <a href=''>View cart.</a></p>
+        <p>Your wishlist has been updated. <a href='/wishlist'>View wishlist.</a></p>
         <Accordion />
       </ProductInfoContainer>
     </Container>

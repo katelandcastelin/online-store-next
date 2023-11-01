@@ -7,6 +7,7 @@ const corsetProducts = [
     price: 880,
     description: 'Botanical',
     images: corsetGallery.find(item => item.id === 'C1').images,
+    category: 'corset',
   },
   {
     id: 'C2',
@@ -14,6 +15,7 @@ const corsetProducts = [
     price: 990,
     description: 'Toile de Jouy underbust',
     images: corsetGallery.find(item => item.id === 'C2').images,
+    category: 'underbust',
   },
   {
     id: 'C3',
@@ -21,6 +23,7 @@ const corsetProducts = [
     price: 1050,
     description: 'The Three Graces',
     images: corsetGallery.find(item => item.id === 'C3').images,
+    category: 'corset',
   },
   {
     id: 'C4',
@@ -28,6 +31,7 @@ const corsetProducts = [
     price: 880,
     description: 'Pot Cat',
     images: corsetGallery.find(item => item.id === 'C4').images,
+    category: 'corset',
   },
   {
     id: 'C5',
@@ -35,6 +39,7 @@ const corsetProducts = [
     price: 880,
     description: 'Starry Night underbust',
     images: corsetGallery.find(item => item.id === 'C5').images,
+    category: 'underbust',
   },
   {
     id: 'C6',
@@ -42,6 +47,7 @@ const corsetProducts = [
     price: 1050,
     description: 'Vintage tapestry',
     images: corsetGallery.find(item => item.id === 'C6').images,
+    category: 'corset',
   },
   {
     id: 'C7',
@@ -49,6 +55,7 @@ const corsetProducts = [
     price: 1050,
     description: 'Chain underbust',
     images: corsetGallery.find(item => item.id === 'C7').images,
+    category: 'underbust',
   },
   {
     id: 'C8',
@@ -56,6 +63,7 @@ const corsetProducts = [
     price: 1080,
     description: 'The Birth of Venus strapless full bust',
     images: corsetGallery.find(item => item.id === 'C8').images,
+    category: 'corset',
   },
   {
     id: 'C9',
@@ -63,6 +71,7 @@ const corsetProducts = [
     price: 1050,
     description: 'The Creation of Adam',
     images: corsetGallery.find(item => item.id === 'C9').images,
+    category: 'corset',
   },
   {
     id: 'C10',
@@ -70,6 +79,7 @@ const corsetProducts = [
     price: 1050,
     description: 'Toile de Jouy',
     images: corsetGallery.find(item => item.id === 'C10').images,
+    category: 'corset',
   },
   {
     id: 'C11',
@@ -77,6 +87,7 @@ const corsetProducts = [
     price: 1050,
     description: 'Berries',
     images: corsetGallery.find(item => item.id === 'C11').images,
+    category: 'corset',
   },
   {
     id: 'C12',
@@ -84,6 +95,7 @@ const corsetProducts = [
     price: 1080,
     description: 'Starry Night full bust',
     images: corsetGallery.find(item => item.id === 'C12').images,
+    category: 'full',
   },
   {
     id: 'C13',
@@ -91,6 +103,7 @@ const corsetProducts = [
     price: 1080,
     description: 'Birth of Venus with straps full bust',
     images: corsetGallery.find(item => item.id === 'C13').images,
+    category: 'corset',
   },
   {
     id: 'C14',
@@ -98,6 +111,7 @@ const corsetProducts = [
     price: 1080,
     description: 'Primavera full bust',
     images: corsetGallery.find(item => item.id === 'C14').images,
+    category: 'corset',
   },
   {
     id: 'C15',
@@ -105,6 +119,7 @@ const corsetProducts = [
     price: 1050,
     description: 'Mary',
     images: corsetGallery.find(item => item.id === 'C15').images,
+    category: 'corset',
   },
   {
     id: 'C16',
@@ -112,6 +127,7 @@ const corsetProducts = [
     price: 1050,
     description: 'Birth of Venus',
     images: corsetGallery.find(item => item.id === 'C16').images,
+    category: 'corset',
   },
 ];
 

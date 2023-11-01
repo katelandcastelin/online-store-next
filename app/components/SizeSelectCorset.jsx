@@ -17,6 +17,7 @@ const Container = styled.div`
 
 const SizeOptions = styled.div`
   display: flex;
+  margin-bottom: 10px;
 `;
 
 const SizeBlock = styled.div`
@@ -27,7 +28,7 @@ const SizeBlock = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 6px;
+  margin-right: 6px;
   cursor: pointer;
   background-color: #e2dbdb;
   color: #555;
@@ -40,13 +41,13 @@ const SizeBlock = styled.div`
 
 const InputContainer = styled.div`
   display: flex;
-  padding: 10px;
+  margin-bottom: 20px;
 `;
 
 const SizeInput = styled.div`
   display: flex;
   align-items: center;
-  margin: 0 10px 10px 0;
+  margin: 0 10px 0 0;
 `;
 
 const Input = styled.input`
