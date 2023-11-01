@@ -24,6 +24,7 @@ const Container = styled.div`
 
   p {
     margin-left: 10px;
+    margin-bottom: 20px;
   }
 
   a {
