@@ -145,10 +145,14 @@ export default function ProductDetails({ product }) {
         <SizeSelectCorset />
         <div style={{display: 'flex'}}>
           <AddToCart />
-          <AddToWishlist />
+          {/* <AddToWishlist /> */}
+          <button>
+            <img src='/heart.png' alt='heart' style={{height: '16px'}} />
+            Add to wishlist
+          </button>
         </div>
-        <p style={{margin: '0 0 20px 10px'}}>Item has been added to your cart. <a href=''>View cart.</a></p>
-        <p style={{margin: '0 0 20px 10px'}}>Your wishlist has been updated. <a href='/wishlist'>View wishlist.</a></p>
+        {/* <p style={{margin: '0 0 20px 10px'}}>Item has been added to your cart. <a href=''>View cart.</a></p>
+        <p style={{margin: '0 0 20px 10px'}}>Your wishlist has been updated. <a href='/wishlist'>View wishlist.</a></p> */}
         <Accordion />
       </ProductInfoContainer>
     </Container>

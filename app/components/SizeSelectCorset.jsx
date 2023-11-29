@@ -66,13 +66,13 @@ const Label = styled.label`
   color: #303030;
 `;
 
-export default function SizeSelect() {
+export default function SizeSelectCorset() {
 
   return (
     <Container>
       <SizeOptions>
         {sizes.map((size) => (
-          <SizeBlock>{size}</SizeBlock>
+          <SizeBlock key={size}>{size}</SizeBlock>
         ))}
       </SizeOptions>
       <InputContainer>
