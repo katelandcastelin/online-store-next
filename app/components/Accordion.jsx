@@ -27,12 +27,10 @@ export default function ControlledAccordions() {
           </Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <Typography>
             {/* corset size chart */}
             <SizeChartCorset />
             {/* underbust size chart */}
             {/* skirt size chart */}
-          </Typography>
         </AccordionDetails>
       </Accordion>
 

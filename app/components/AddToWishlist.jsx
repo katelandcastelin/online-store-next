@@ -33,7 +33,7 @@ export default function AddToWishlist() {
   return (
     <div>
       <P>
-        <img src='/heart.png' />
+        <img src='/heart.png' alt='heart' />
         Add to wishlist
       </P>
     </div>
