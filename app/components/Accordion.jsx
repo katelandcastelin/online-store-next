@@ -22,11 +22,11 @@ export default function ControlledAccordions() {
           aria-controls="panel2bh-content"
           id="panel2bh-header"
         >
-          <Typography sx={{ width: '33%', flexShrink: 0 }}>
+          <Typography sx={{ width: '33%', flexShrink: 0, color: 'white' }}>
             Size Chart
           </Typography>
         </AccordionSummary>
-        <AccordionDetails>
+        <AccordionDetails sx={{ color: 'white' }}>
             {/* corset size chart */}
             <SizeChartCorset />
             {/* underbust size chart */}
@@ -40,14 +40,13 @@ export default function ControlledAccordions() {
           aria-controls="panel1bh-content"
           id="panel1bh-header"
         >
-          <Typography sx={{ width: '33%', flexShrink: 0 }}>
+          <Typography sx={{ width: '33%', flexShrink: 0, color: 'white' }}>
             Details and Care
           </Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <Typography>
-            Remove ribbons before washing. Cold hand wash only. Hang to dry or lay on a ventilated surface.
-            Keep out of direct sunlight. 
+          <Typography sx={{ color: 'white' }}>
+            Care instructions
           </Typography>
         </AccordionDetails>
       </Accordion>
@@ -58,12 +57,12 @@ export default function ControlledAccordions() {
           aria-controls="panel3bh-content"
           id="panel3bh-header"
         >
-          <Typography sx={{ width: '44%', flexShrink: 0 }}>
+          <Typography sx={{ width: '44%', flexShrink: 0, color: 'white' }}>
             Shipping Information
           </Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <Typography>
+          <Typography sx={{ color: 'white' }}>
             South Africa:
             <br />
             Aramex - R100 ships to your door and takes 1 - 3 days.
@@ -79,12 +78,12 @@ export default function ControlledAccordions() {
           aria-controls="panel4bh-content"
           id="panel4bh-header"
         >
-          <Typography sx={{ width: '33%', flexShrink: 0 }}>
+          <Typography sx={{ width: '33%', flexShrink: 0, color: 'white' }}>
             Reviews
           </Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <Typography>
+          <Typography sx={{ color: 'white' }}>
             Reviews rendered from the data file
           </Typography>
         </AccordionDetails>

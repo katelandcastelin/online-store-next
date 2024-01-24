@@ -23,19 +23,19 @@ const SizeOptions = styled.div`
 const SizeBlock = styled.div`
   height: 47px;
   width: 49px;
-  border: 2px solid #dcd2d2;
+  border: 2px solid #ffffff;
   border-radius: 4px;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-right: 6px;
   cursor: pointer;
-  background-color: #e2dbdb;
-  color: #555;
+  background-color: #000000;
+  color: #ffffff;
 
   :hover {
     color: #000;
-    background-color: #dacbcb;
+    background-color: #ffffff;
   }
 `;
 
@@ -55,15 +55,15 @@ const Input = styled.input`
   display: flex;
   padding: 5px;
   background-color: transparent;
-  border: solid #c4c4c4;
+  border: solid #ffffff;
   font-size: medium;
-  color: #555;
+  color: #ffffff;
   border-radius: 3px;
 `;
 
 const Label = styled.label`
   margin-right: 5px;
-  color: #303030;
+  color: #ffffff;
 `;
 
 export default function SizeSelectCorset() {
@@ -77,7 +77,7 @@ export default function SizeSelectCorset() {
       </SizeOptions>
       <InputContainer>
         <SizeInput>
-          <Label>Bust:</Label>
+          <Label>Chest:</Label>
           <Input type='number' />
         </SizeInput>
         <SizeInput>

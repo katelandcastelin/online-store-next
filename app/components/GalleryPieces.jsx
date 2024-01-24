@@ -50,6 +50,7 @@ const Description = styled.p`
   font-size: large;
   margin-left: 40px;
   font-weight: 300;
+  color: #000;
 `;
 
 export default function GalleryPieces({ selectedArtwork }) {
@@ -61,7 +62,7 @@ export default function GalleryPieces({ selectedArtwork }) {
           {selectedArtwork.corsets.map((corset, index) => (
             <div key={index}>
               <CorsetImage src={corset.image} alt={corset.description} />
-              {/* <Description  className={assistant.className}>{corset.description}</Description> */}
+              <Description className={assistant.className}>{corset.description}</Description>
             </div>
           ))}
         </div>

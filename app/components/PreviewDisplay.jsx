@@ -80,24 +80,24 @@ export default function PreviewDisplay() {
     <Container className={assistant.className}>
       <SmallBlockContainer>
         <DisplayBlock href='/corsets'>
-          <p>Corsets</p>
-          <img src='/images/home-display/toile.png' />
+          <p>e.g 1</p>
+          <img />
         </DisplayBlock>
         <DisplayBlock href="/skirts">
-          <p>Skirts</p>
-          <img src='/images/home-display/figure-skirt.png' />
+          <p>e.g 2</p>
+          <img />
         </DisplayBlock>
       </SmallBlockContainer>
       <WideBlockContainer>
         <WideDisplay href='/gallery'>
-          <p>Gallery</p>
-          <img src='/images/artworks/creation-of-adam.jpeg' />
+          <p>e.g 3</p>
+          <img />
         </WideDisplay>
       </WideBlockContainer>
       <WideBlockContainer>
         <WideDisplay>
-          <p>Workspace</p>
-          <img src='/images/home-display/work.png' />
+          <p>e.g 4</p>
+          <img />
         </WideDisplay>
       </WideBlockContainer>
     </Container>
