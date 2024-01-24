@@ -112,7 +112,7 @@ const Description = styled.p`
 const Price = styled.p`
   font-size: larger;
   margin-left: 20px;
-  color: #555;
+  color: #ffffff;
 `;
 
 export default function ProductDetails({ product }) {
@@ -146,10 +146,10 @@ export default function ProductDetails({ product }) {
         <div style={{display: 'flex'}}>
           <AddToCart />
           {/* <AddToWishlist /> */}
-          <button>
+          {/* <button>
             <img src='/heart.png' alt='heart' style={{height: '16px'}} />
             Add to wishlist
-          </button>
+          </button> */}
         </div>
         {/* <p style={{margin: '0 0 20px 10px'}}>Item has been added to your cart. <a href=''>View cart.</a></p>
         <p style={{margin: '0 0 20px 10px'}}>Your wishlist has been updated. <a href='/wishlist'>View wishlist.</a></p> */}

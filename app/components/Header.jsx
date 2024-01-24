@@ -8,28 +8,7 @@ const HeaderContainer = styled.header`
   display: flex;
   align-items: center;
   position: relative;
-
-  &::before {
-    content: "";
-    position: absolute;
-    background-image: url('/images/header/binding.png');
-    background-size: 100vw;
-    background-repeat: no-repeat;
-    opacity: 0.8;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-  }
-`;
-
-const WhiteBlock = styled.div`
-  height: 100%;
-  width: 100vw;
-  background-color: #fff;
-  position: absolute;
-  z-index: -2;
-  left: 0;
+  box-shadow: 0 4px 2px -2px gray;
 `;
 
 const HeaderLogo = styled.a`
@@ -40,6 +19,10 @@ const HeaderLogo = styled.a`
 const Slogan = styled.p`
   text-align: center;
   color: #808080;
+
+  &:hover {
+    box-shadow: 0 4px 12px -2px gray;
+  }
 `;
 
 const LogoContainer = styled.div`
@@ -69,13 +52,13 @@ const DropDownDiv = styled.div`
 `;
 
 const NavLink = styled.a`
-  color: #000;
+  color: #ffffff;
   margin: 10px;
   font-weight: 200;
   text-decoration: none;
 
   &:hover {
-    text-decoration: underline;
+    box-shadow: 0 4px 12px -2px gray;
   }
 `;
 
@@ -104,10 +87,10 @@ export default function Header() {
       </DropDownDiv>
       <HeaderLogo href="/">
         <LogoContainer>
-          <Logo src='/sewing-logo.png' />
+          <Logo src='/brightvoid-logo.png'/>
         </LogoContainer>
         <div>
-          <Slogan>Stitched with Passion, Worn with Artistry</Slogan>
+          <Slogan>Step into the void</Slogan>
         </div>
       </HeaderLogo>
       <Links>
@@ -118,7 +101,7 @@ export default function Header() {
       </Links>
       <RightContainer>
         <a href="/log-in">
-          <img src="/profile.png" />
+          <img src="/images/artworks/cardboard/anon.png" />
         </a>
         <a href="/wishlist">
           <img src="/heart.png" />
@@ -127,7 +110,6 @@ export default function Header() {
           <img src="/cart.png" />
         </a>
       </RightContainer>
-      <WhiteBlock />
     </HeaderContainer>
   )
 }
